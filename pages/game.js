@@ -36,7 +36,7 @@ class game extends React.Component {
 
   componentDidMount() {
     axios
-      .get(data.api + "/api/status")
+      .get(process.env.api + "/api/status")
       .then((response) => {
         var temp3 = new Date(response.data.start_time);
         let temp2 = new Date(response.data.end_time);
@@ -82,7 +82,7 @@ class game extends React.Component {
 
   getQuestions() {
     axios
-      .get(data.api + "/api/question", {
+      .get(process.env.api + "/api/question", {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },
@@ -142,7 +142,7 @@ class game extends React.Component {
   ) {
     axios
       .post(
-        data.api + "/api/checkanswer",
+        process.env.api + "/api/checkanswer",
         { answer: ans },
         {
           headers: {

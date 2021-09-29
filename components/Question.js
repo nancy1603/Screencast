@@ -65,7 +65,7 @@ export default function Question(props) {
 
         {props.image ? (
           <ResponsiveImage
-          src={data.api + props.image}
+          src={process.env.api + props.image}
           width={ 1200 }
           height={ 800 } />
 
@@ -88,7 +88,7 @@ export default function Question(props) {
           <div style={{ textAlign: "center", margin: "0 auto" }}>
             <AudioHint
               style={{ textAlign: "center", margin: "0 auto" }}
-              audio={data.api + props.audio}
+              audio={process.env.api + props.audio}
             />
           </div>
         ) : (

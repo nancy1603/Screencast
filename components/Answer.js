@@ -36,16 +36,13 @@ const useStyles = (theme) => ({
   }
 });
 
-class Answer extends Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    const { classes } = this.props;
+function Answer(props) {
+  
+  
+    const { classes } = props;
     return (
       <div>
-        <form className={classes.ansdiv} noValidate autoComplete="off" onSubmit={this.props.submit}>
+        <form className={classes.ansdiv} noValidate autoComplete="off" onSubmit={props.submit}>
           {/* <TextField
             id="filled-basic"
             label="Type your answer here."
@@ -56,15 +53,15 @@ class Answer extends Component {
             className={classes.anstype}
             style={{ maxWidth: "600px", width: "80%", }}
           /> */}
-          <input className={classes.ans} placeholder="Answer" onChange={this.props.change}
+          <input className={classes.ans} placeholder="Answer" onChange={props.change}
             
-            value={this.props.answer}/>
+            value={props.answer}/>
           <br />
           <br />
 
         </form>
       </div>
     );
-  }
+  
 }
 export default withStyles(useStyles)(Answer);
