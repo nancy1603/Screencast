@@ -1,4 +1,6 @@
-import React from "react";
+
+
+import React, {useState,useEffect} from "react";
 import GoogleLogin from "react-google-login";
 import axios from "axios";
 import Button from "@material-ui/core/Button";
@@ -6,7 +8,7 @@ import { withStyles } from "@material-ui/core/styles";
 import { SocialMediaIconsReact } from 'social-media-icons-react';
 import Router from "next/router";
 import AnsAlert from "../components/AnsAlert"
-import data from '../env.json';
+// import data from '../env.json';
 
 
 const useStyles = (theme) => ({
@@ -17,28 +19,28 @@ const useStyles = (theme) => ({
   },
 });
 
-class GoogleLog extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      userDetails: {},
-      isUserLoggedIn: false,
-      access: "",
-      result: false
-    };
-  }
+ function GoogleLog(props) {
+  
+       const [userDetails,setUserDetails]= useState({}),
+       [isUserLoggedIn,setIsUserLoggedIn]=useState(false),
+       [access,setAccess]=useState(""),
+       [result,setResult]=useState(false)
+      //  const classes = useStyles();
 
-  componentDidMount() {
+    
+  
+
+      useEffect (() => {
     if (localStorage.getItem('day') == 3 && localStorage.getItem('end') < Date.now()) Router.push('/finale')
     else {
       if (localStorage.getItem("email")) {
-        this.setState({ isUserLoggedIn: true }, () => {
+        setIsUserLoggedIn({isUserLoggedIn:true} , () => {
         })
       }
     }
-  }
+  },[]);
 
-  responseGoogle = (response) => {
+  const responseGoogle = (response) => {
 
     axios
       .post(process.env.api + "/api/googlelogin", {
@@ -51,12 +53,18 @@ class GoogleLog extends React.Component {
         localStorage.setItem("name", response.profileObj.name);
         localStorage.setItem("image", response.profileObj.imageUrl);
 
-        this.setState({ result: res.data.quiz_finished, access: res.data.access_token, userDetails: response.profileObj, isUserLoggedIn: true }, () => {
-
-          if ((localStorage.getItem('start') <= Date.now())) {
-            if (!(res.data.quiz_finished) && localStorage.getItem('end') > Date.now()) Router.push('/game')
+         setResult(res.data.quiz_finished)
+           setAccess(res.data.access_token) 
+           setUserDetails(response.profileObj) 
+           setIsUserLoggedIn(true) 
+           if ((localStorage.getItem('start') <= Date.now())) {
+            if (!(res.data.quiz_finished) && localStorage.getItem('end') > Date.now()){
+              console.log("game");
+              Router.push('/game')
+            }
+             
             else if (res.data.quiz_finished && localStorage.getItem('end') > Date.now()) {
-
+                console.log("finale");
               Router.push('/finale')
             }
             else if((res.data.error) === "No active quizes"){
@@ -68,7 +76,9 @@ class GoogleLog extends React.Component {
           }
           else
             Router.reload();
-        })
+            
+          
+        
       })
       .catch((err) => {
         console.log(err)
@@ -76,12 +86,12 @@ class GoogleLog extends React.Component {
   };
 
 
-  render() {
-    const { classes } = this.props;
+  
+    const { classes } = props;
     return (
       <div>
         <div>
-          {!this.state.isUserLoggedIn && (
+          {!isUserLoggedIn && (
             <GoogleLogin
               clientId="868193229049-r3rkp0lue3f4hk4g0d0c4h418d63mbmb.apps.googleusercontent.com"
               render={(renderProps) => (
@@ -100,8 +110,8 @@ class GoogleLog extends React.Component {
                   </Button>
                 </div>
               )}
-              onSuccess={this.responseGoogle} //isSignedIn ??
-              onFailure={this.responseGoogle} //handle later
+              onSuccess={responseGoogle} //isSignedIn ??
+              onFailure={responseGoogle} //handle later
 
               cookiePolicy={"single_host_origin"}
             />
@@ -110,7 +120,7 @@ class GoogleLog extends React.Component {
       </div>
 
     );
-  }
+  
 }
 
 export default withStyles(useStyles)(GoogleLog);

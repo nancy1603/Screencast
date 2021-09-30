@@ -23,9 +23,9 @@ function MyApp(props) {
     Router.events.on("routeChangeComplete", () =>
       setLoaded(false)
     );
-  }
+  },[]);
 
-  );
+  
 
   
         const { Component, pageProps } = props;
