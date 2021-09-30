@@ -41,7 +41,7 @@ class GoogleLog extends React.Component {
   responseGoogle = (response) => {
 
     axios
-      .post(data.api + "/api/googlelogin", {
+      .post(process.env.api + "/api/googlelogin", {
         token: response.tokenObj.access_token
       })
       .then((res) => {
@@ -83,7 +83,7 @@ class GoogleLog extends React.Component {
         <div>
           {!this.state.isUserLoggedIn && (
             <GoogleLogin
-              clientId="785334417583-prl4pto7m5cakqbes2p0h6nise9u7n17.apps.googleusercontent.com"
+              clientId="868193229049-r3rkp0lue3f4hk4g0d0c4h418d63mbmb.apps.googleusercontent.com"
               render={(renderProps) => (
                 <div className={classes.root}  >
 

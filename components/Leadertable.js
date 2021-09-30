@@ -69,7 +69,7 @@ export default function Leadertable() {
 
   useEffect(() => {
     axios
-      .get(data.api + "/api/leaderboard")
+      .get(process.env.api + "/api/leaderboard")
       .then((response) => {
         setRankList(response.data);
 

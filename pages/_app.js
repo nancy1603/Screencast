@@ -1,5 +1,5 @@
 import '../style.css'
-import React from 'react';
+import React, {useState,useEffect} from 'react';
 import App from 'next/app';
 import Head from "next/head";
 import Router from "next/router";
@@ -7,31 +7,28 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Loader from "../components/Loader.js"
 
-class MyApp extends App {
-  constructor(props) {
-    super(props);
-    this.state = {
-      loaded: false,
-    };
-  }
+function MyApp(props) {
+  const[loaded,setLoaded]=useState(false);
 
-  componentDidMount() {
+  useEffect(() =>{
     const jssStyles = document.querySelector("#jss-server-side");
     if (jssStyles) {
       jssStyles.parentElement.removeChild(jssStyles);
     }
 
-    this.setState({ loaded: true });
+    setLoaded(true);
     Router.events.on("routeChangeStart", () =>
-      this.setState({ loaded: false })
+      setLoaded(false)
     );
     Router.events.on("routeChangeComplete", () =>
-      this.setState({ loaded: true })
+      setLoaded(false)
     );
   }
 
-    render() {
-        const { Component, pageProps } = this.props;
+  );
+
+  
+        const { Component, pageProps } = props;
 
         return(
         <>
@@ -48,7 +45,7 @@ class MyApp extends App {
         <ThemeProvider>
           <div className="back">
           <CssBaseline />
-          {this.state.loaded ? (
+          {loaded ? (
             <Component {...pageProps} />
           ) : (
             <Loader />
@@ -58,7 +55,7 @@ class MyApp extends App {
         </React.Fragment>
         </>
         );
-    }
+    
 }
 
 export default MyApp;

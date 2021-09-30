@@ -17,7 +17,7 @@ function index() {
 
   useEffect(() => {
     axios
-      .get(data.api + "/api/status")
+      .get(process.env.api + "/api/status")
       .then((response) => {
         if (response.data.status == 404)
           Router.push('/error')
