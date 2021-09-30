@@ -1,10 +1,13 @@
+
+
+
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import GoogleLog from "../components/GoogleLog";
 import FbLog2 from "../components/FbLog2";
 import Timer2 from "../components/Timer2";
 import Router from "next/router";
-import data from '../env.json';
+// import data from '../env.json';
 import Layout from "../components/Layout";
 import Loader from "../components/Loader";
 
@@ -32,9 +35,12 @@ function index() {
         localStorage.setItem("day", day);
 
         if (localStorage.getItem('day') == 3 && (localStorage.getItem('end') < Date.now())) {
+         console.log("finale");
           Router.push('/finale')
         }
+        
         else if (localStorage.getItem('email') && (localStorage.getItem('start') < Date.now()) && localStorage.getItem('end') > Date.now()) {
+          console.log("game");
           Router.push('/game')
         }
         setloading(true)
