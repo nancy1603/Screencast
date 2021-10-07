@@ -1,4 +1,4 @@
-import '../style.css'
+import '../styles/globals.css'
 import React, {useState,useEffect} from 'react';
 import App from 'next/app';
 import Head from "next/head";
@@ -21,7 +21,7 @@ function MyApp(props) {
       setLoaded(false)
     );
     Router.events.on("routeChangeComplete", () =>
-      setLoaded(false)
+      setLoaded(true)
     );
   },[]);
 
