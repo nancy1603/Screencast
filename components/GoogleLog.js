@@ -106,7 +106,7 @@ const useStyles = (theme) => ({
                     onClick={renderProps.onClick}
 
                   >
-                    <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="4" borderStyle="inset" icon="googleplus" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(223,48,28,1)" iconSize="7" roundness="29%" size="53" />
+                    <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="4" borderStyle="inset" icon="googleplus" iconColor="rgba(0,0,0,1)" backgroundColor="rgba(21, 234, 248, 1)" iconSize="7" roundness="50%" size="53" />
                   </Button>
                 </div>
               )}

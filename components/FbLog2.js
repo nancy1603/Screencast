@@ -4,7 +4,7 @@ import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props
 import Router from "next/router";
 import axios from "axios";
 import AnsAlert from "../components/AnsAlert"
-import data from '../env.json';
+//import data from '../env.json';
 
 const LoginButton = ({ facebookResponse }) => (
   <FacebookLogin

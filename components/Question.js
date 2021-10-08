@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
-import data from '../env.json';
+//import data from '../env.json';
 import AudioHint from "./AudioHint";
 import { Data } from "react-f/lib/src/form";
 import ResponsiveImage from './ImageHint'

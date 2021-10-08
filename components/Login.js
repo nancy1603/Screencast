@@ -2,7 +2,7 @@ import React, {useState,useEffect} from "react";
 import GoogleLog from "./GoogleLog";
 import Timer2 from "./Timer2";
 import Router from "next/router";
-import styles from "../styles/Login.module.css";
+import styles from "../styles/index.module.css";
 import axios from "axios";
 import Loader from "./Loader";
 
@@ -55,16 +55,16 @@ export default function Login(props) {
         <div>
             { (loading === true) ?
         <>
-          <div style={{ textAlign: "center", backgroundColor: "rgba(3, 3, 65, 0.5)", boxShadow: "5px 5px 7px rgba(10, 10, 10, 0.9)", width: "92%", maxWidth: "600px", borderRadius: "20px", margin: "0 auto", marginTop: "100px", paddingTop: "30px", paddingBottom: "0px" }}>
+          <div className={styles.login}>
             <Timer2 start={start} end={end} />
 
-            <div>
-              <div
-                style={{
+            
+              <div className={styles.imgg}
+                /*style={{
                   marginTop: "40px",
                   marginBottom: "20px",
                   fontFamily: "'Russo One', sans-serif",
-                }}
+                }}*/
               >
                 {/*<span className="fast-flicker">GEEK</span>TOBER{" "}
                 <br />
@@ -75,17 +75,17 @@ export default function Login(props) {
                 <h1>Ready to play ?</h1>*/}
                 <img src="Other 04.png"/>
               </div>
-            </div>
+          
 
-            <div className='rowC' style={{ margin: "0 auto", paddingBottom: '40px', textAlign: "center", width: "100%", justifyContent: "center" }}>
+            <div style={{ margin: "0 auto", paddingBottom: '40px', textAlign: "center", width: "100%", justifyContent: "center" }}>
               <GoogleLog />
               {/* <FbLog2 /> */}
             </div>
           </div>
           
-          <div className='footerBuff'>
+          {/*<div className='footerBuff'>
 
-          </div>
+          </div>*/}
         </>
         : <Loader />}
         </div>

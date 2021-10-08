@@ -7,7 +7,6 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Typography from "@material-ui/core/Typography";
 import axios from "axios";
-import data from '../env.json';
 import Avatar from "@material-ui/core/Avatar";
 import Loader from "./Loader";
 

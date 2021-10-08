@@ -4,18 +4,41 @@ import React, { useEffect, useState } from "react";
 //import FbLog2 from "../components/FbLog2";
 //import Timer2 from "../components/Timer2";
 import Login from "../components/Login"
+
 //import Router from "next/router";
 // import data from '../env.json';
-import Layout from "../components/Layout";
+//import Layout from "../components/Layout";
 //import Loader from "../components/Loader";
+import styles from "../styles/index.module.css"
+import Rules from "../components/Rules"
 
 function index() {
 
 
   return (
-    
+   //<div className={styles.dashboard}> 
+  <div className={styles.glasscontainer}>
+    <div className={styles.nave}>
+      <div className={styles.logo}>SCREEN<span>CAST</span></div>
+    </div>
+
+    <div className={styles.main}>
+    <div className={styles.innercontent}>
+      <h1>Lorem ipsum dolor sit amet</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat esse, aperiam minus distinctio debitis repellendus pariatur provident tempora cum ex quam adipisci ipsum quo ipsa ratione nostrum. Aut, dolores qui. Opti</p>
+       
+      <div className={styles.btn}><Rules>RULES</Rules></div>
+      
+    </div>
+         <Login />
+    </div>
+
+  </div>
+//</div>
+ 
+
    
-            <Login />
+            
             
              
     
