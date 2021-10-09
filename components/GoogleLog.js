@@ -41,10 +41,10 @@ const useStyles = (theme) => ({
   },[]);
 
   const responseGoogle = (response) => {
-
+    console.log(response);
     axios
       .post(process.env.api + "/api/googlelogin", {
-        token: response.tokenObj.access_token
+        token: response.tokenObj.id_token
       })
       .then((res) => {
         localStorage.setItem('token', res.data.access_token)
