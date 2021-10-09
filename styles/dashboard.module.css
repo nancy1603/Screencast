@@ -1,0 +1,115 @@
+.Container{
+    /* display:flex;
+    align-content:center;
+    justify-content: center;
+    position:relative;
+    padding: 20px 0;
+    width:95%;
+    height:90%;
+    left:50px;
+    /* right:25px; */
+    /* top: 26px; */
+    /* bottom: 12px; */
+    /* background-color: black; */
+    /* background: rgba(2, 52, 58, 0.31);
+    backdrop-filter: blur(5px); */
+/* Note: backdrop-filter has minimal browser support */
+    /* border: 4px solid #4dcfe0;
+    border-radius: 30px;  */
+
+    background-image: url('../public/bgg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 100vh;
+    padding: 40px 0;
+    margin: 0px;
+    width: 100%;
+    min-height: 105vh;
+    position: absolute;
+    background-size: auto 110vh;
+    background-repeat: no-repeat;
+    z-index: -99; 
+}
+.cont{
+display:flex;
+width: 90%;
+margin: 0 auto;
+height: calc(100vh - 80px);
+border-radius: 30px;
+background: rgba(2, 52, 58, 0.3);
+border: 4px solid #4dcfe0;
+backdrop-filter: blur(5px);
+position: relative;
+/* top:0px; */
+}
+.TimelineContainer{
+    align-content:center;
+    width:566px;
+    /* height:1022px; */
+    height:calc(100vh - 80px);
+    left: 25px;
+    /* top:28px; */
+    /* background-color: white 0%; */
+    /* margin:15px; */
+    padding:10px;
+
+
+}
+.MainContainer{
+    align-content:center;
+    width:644px;
+    /* height:1022px; */
+    height:calc(100vh - 80px);
+    left: 1322px;
+    top:28px;
+    /* background-color: black 0%; */
+    /* margin:15px;  */
+    padding:10px; 
+
+}
+.LeadtableContainer{
+    align-content:center;
+    width:566px;
+    /* height:1022px; */
+    height:calc(100vh - 80px);
+    left: 1300px;
+    top:28px;
+    /* background-color: black 0%; */
+    /* margin:15px; */
+    padding:10px;
+
+}
+@media only screen and (max-width: 1230px) {
+.Container{
+/* display:inherit;
+position: relative;
+border: 4px solid #4dcfe0;
+border-radius: 30px;
+left:10px;
+/* right:25px; */
+/* top: 10px;  */
+display:inherit;
+}
+.cont{
+top:0;
+height:calc(100vh - 5px);
+width: 90%;
+}
+
+.TimelineContainer{
+display:none;
+
+}
+.MainContainer{
+justify-content: center;
+align-content: center; 
+width:100%;
+height:100%; 
+ 
+}
+.LeadtableContainer{
+display:none;
+}
+}

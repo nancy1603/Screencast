@@ -6,9 +6,9 @@ export default function Layout(props) {
     return (
         <div>
             <React.Fragment>
-                <Navbar />
+                {/* <Navbar /> */}
                 {props.children}
-                <Footer />
+                {/* <Footer /> */}
             </React.Fragment>
         </div>
     )

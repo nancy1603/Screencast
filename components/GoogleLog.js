@@ -60,7 +60,7 @@ const useStyles = (theme) => ({
            if ((localStorage.getItem('start') <= Date.now())) {
             if (!(res.data.quiz_finished) && localStorage.getItem('end') > Date.now()){
               console.log("game");
-              Router.push('/game')
+              Router.push('/dashboard')
             }
              
             else if (res.data.quiz_finished && localStorage.getItem('end') > Date.now()) {

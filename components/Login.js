@@ -37,7 +37,7 @@ export default function Login(props) {
         
         else if (localStorage.getItem('email') && (localStorage.getItem('start') < Date.now()) && localStorage.getItem('end') > Date.now()) {
           console.log("game");
-          Router.push('/game')
+          Router.push('/dashboard')
         }
         setloading(true)
       })
