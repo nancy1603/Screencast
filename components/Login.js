@@ -59,7 +59,7 @@ export default function Login(props) {
             <Timer2 start={start} end={end} />
 
             
-              <div className={styles.imgg}
+              <div 
                 /*style={{
                   marginTop: "40px",
                   marginBottom: "20px",
@@ -73,7 +73,7 @@ export default function Login(props) {
 
               <div className="login-head" style={{ marginBottom: "60px" }}>
                 <h1>Ready to play ?</h1>*/}
-                <img src="Other 04.png"/>
+                <img className={styles.imgg} src="Other 04.png"/>
               </div>
           
 

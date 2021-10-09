@@ -1,0 +1,16 @@
+.timer{
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transform: translate(-50%);
+    text-transform: uppercase;
+    letter-spacing: 2;
+    left: 50%;
+    top: 10%;
+    font-family: "Clip";
+    font-size: 37px;
+    color: #33d3df;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

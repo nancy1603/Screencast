@@ -1,6 +1,7 @@
 import React from 'react'
 import Router from "next/router";
 import Countdown, { zeroPad } from 'react-countdown';
+import styles from "../styles/Timer2.module.css"
 
 export default function Timer(props) {
     console.log(props)
@@ -14,11 +15,11 @@ export default function Timer(props) {
     }
     const Completionist = () => {
         return (
-            <span className="sign">
-            <div style={{ backgroundColor: "rgba(0,0,0,0)", color: "white", padding: "0", margin: "0 auto" }}>
+            <span className={styles.timer}>
+            <div style={{ backgroundColor: "rgba(0,0,0,0)", padding: "0", margin: "0 auto" }}>
                 
                
-                    <div style={{ textAlign: "center", fontSize: "17px", fontFamily: "'Cabin Sketch', sans-serif" }}>
+                    <div style={{ textAlign: "center", fontSize: "17px",  }}>
                        
                         <h1>
                             Game is live !
@@ -37,9 +38,9 @@ export default function Timer(props) {
         } else {
             return (
                 
-                    <div style={{ backgroundColor: "rgba(0,0,0,0)", color: "white", padding: "0", margin: "0 auto" }}>
+                    <div style={{ backgroundColor: "rgba(0,0,0,0)", padding: "0", margin: "0 auto" }}>
                         
-                            <div style={{ textAlign: "center", fontSize: "17px", fontFamily: "'Cabin Sketch', sans-serif", }}>
+                            <div style={{ textAlign: "center", fontSize: "17px", }}>
                                 <h1>
                                     {props.message}&nbsp;&nbsp;{zeroPad(days, 2)}:{zeroPad(hours)}:{zeroPad(minutes)}:{zeroPad(seconds)}
                                 </h1>
