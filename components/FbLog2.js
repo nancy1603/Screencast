@@ -74,7 +74,7 @@ class FbLog2 extends React.Component {
 
         this.setState({ result: res.data.quiz_finished, user: response, isSignedIn: true, access: res.data.access_token }, () => {
           if ((localStorage.getItem('start') <= Date.now())) {
-            if (!(res.data.quiz_finished) && localStorage.getItem('end') > Date.now()) Router.push('/game')
+            if (!(res.data.quiz_finished) && localStorage.getItem('end') > Date.now()) Router.push('/dashboard')
             else if (res.data.quiz_finished && localStorage.getItem('end') > Date.now()) {
               Router.push('/finale')
             }
