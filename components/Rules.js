@@ -7,6 +7,7 @@ import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import Slide from "@material-ui/core/Slide";
 import Typography from "@material-ui/core/Typography";
+import styles from "../styles/index.module.css"
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -25,7 +26,7 @@ export default function Rules() {
 
   return (
     <div>
-      <div style={{ width: "370px", color: '#FFFFFF', fontFamily:"'Russo One', sans-serif", fontSize:18 }} onClick={handleClickOpen}>
+      <div className={styles.btn} onClick={handleClickOpen}>
         Rules
       </div>
       <Dialog

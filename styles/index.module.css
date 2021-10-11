@@ -1,17 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Cabin+Sketch&family=Montserrat:wght@500&family=Russo+One&family=Monoton&display=swap");
 .dashboard {
     
     background-image: url('../public/bgg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    overflow: hidden;
+    overflow-x: hidden;
     height: 100vh;
     padding: 40px 0;
     margin: 0px;
     width: 100%;
     min-height: 105vh;
     position: absolute;
-    background-size: auto 110vh;
     background-repeat: no-repeat;
     z-index: -99;
    
@@ -112,11 +112,12 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      border: 2px solid #7cece7;
-      border-radius: 10%;
       padding-right: 5%;
       padding: 10px 60px;
       height: 85%;
+      background: rgba(2, 52, 58, 0.3);
+      backdrop-filter: blur(2px);
+      border-radius: 40px;
       /*position: relative;*/
       
      
@@ -126,6 +127,9 @@
       width: 100%;
       align-items: center;
       left: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
   }
  
   .google
@@ -158,21 +162,32 @@
     text-decoration: none;
     text-transform: uppercase;
     background: linear-gradient(99.4deg, #0B8C95 14.06%, #7EEAF1 87.56%);
-    padding: 10px 10px;
+    padding: 15px 10px;
     border-radius: 30px;
-    outline: 4px solid rgba(23, 44, 51, 0.6);
-    transition: all .2s ease;
-    
+    text-align: center;
+    margin-right: 30px;
+    font-size: 40;
+    font-weight: 900;
+    width: 100px;
+    cursor: pointer;
   }
   
   .btn:hover,
   .btn:focus {
-    outline: 4px solid rgba(23, 44, 51, 0.6);
-    outline-offset: -10px;
+    
+    background: rgba(2, 52, 58, 0.3);
+    backdrop-filter: blur(5px);
+    color: #7EEAF1;
+    border: 2px solid #7eeaf1;
     
   }
-  
-  @media screen and (max-width: 970px) {
+  .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+  }
+  @media screen and (max-width: 1230px) {
     .innercontent {
       padding-top: 5%;
       flex-basis: 40%;
@@ -187,17 +202,21 @@
       align-items: center;
       
     }
+    .innercontent p{
+      padding-top: 3%;
+    }
     .login{
       
-      flex-basis: 50%;
-      flex: 1;
+      flex-basis: 40%;
+      
+      
     }
     .imgg{
       width: 100%;
       left: 50%;
     }
     .glasscontainer{
-      height:calc(150vh - 10px);
+      height:calc(160vh - 5px);
       width: 90%;
       
     }
@@ -211,11 +230,35 @@
       font-size: 60px;
     }
   }
-
-  @media screen and (max-height: 710px){
-    .glasscontainer{
-      height:calc(130vh - 10px);
-      width: 90%;
-      
-    }
+  
+@media screen and (max-width: 600px){
+  .login{
+    padding: 10px 35px;
   }
+  .innercontent h1{
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 530px){
+    .logo{
+      font-size: 55px;
+    }
+    .login{
+      flex-basis: 30%;
+      padding: 10px 30px;
+      height: 82%;
+      }
+      .imgg{
+        width: 80%;
+        transform: translateY(-30px);
+        }
+
+    }
+
+    @media screen and (max-width: 450px) {
+      .logo{
+        font-size: 45px;
+      }
+    } 
+
+  
