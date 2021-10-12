@@ -13,6 +13,7 @@ import styles from "../styles/index.module.css"
 import Rules from "../components/Rules"
 import Link from 'next/link'
 import { Dashboard } from "@material-ui/icons";
+import Footers from "../components/Footers"
 
 function index() {
 
@@ -41,6 +42,7 @@ function index() {
     </div>
 
   </div>
+  <Footers />
 </div>
  
 

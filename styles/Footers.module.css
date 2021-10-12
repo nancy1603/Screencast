@@ -1,0 +1,23 @@
+.fonts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   margin-bottom: 5px;
+   transform: translateY(-30px);
+}
+
+.icons{
+    font-size: 3px;
+    color: rgb(174, 202, 226);
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+   
+}
+
+@media screen and (max-width: 530px){
+    .fonts{
+        transform: translateY(-45px);
+    }
+}
+
