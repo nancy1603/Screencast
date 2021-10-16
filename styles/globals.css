@@ -788,3 +788,17 @@ body::-webkit-scrollbar {
     margin: 0 auto;
     
 }
+.Ruleb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+    
+    
+    /* position:relative;
+    margin:0%;
+    top:50%;
+    left:50%;
+    -ms-transform: translate(-10%,-10%);
+    transform: translate(-10%,-10%); */
+}

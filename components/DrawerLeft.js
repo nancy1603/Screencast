@@ -19,7 +19,7 @@ function DrawerLeft() {
         onClose={toggleDrawer(false)}>
             <div 
             onClick={toggleDrawer(false)}
-            style={{backgroundColor:"black", height:"1000vh"}}>
+            style={{backgroundColor:"black", height:"1000vh", minWidth:"100vh-100px"}}>
             <Timeline/>
             </div>
             </Drawer>

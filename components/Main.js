@@ -9,6 +9,12 @@ import Router from "next/router";
 // import data from '../env.json';
 import Layout from "../components/Layout";
 import Loader from "../components/Loader";
+import { GoogleLogout } from "react-google-login";
+// import Router from "next/router";
+import Link from "next/link";
+import MenuItem from "@material-ui/core/MenuItem";
+import { Typography } from "@material-ui/core";
+import Rules from "./Rules";
 
 export default function game() {
   
@@ -25,6 +31,39 @@ export default function game() {
       [message,setMessage]=useState(""),
       [v,setV]=useState(""),
       [loaded,setLoaded]=useState(false)
+      const [isSignedIn, setIsSigned] = useState(false);
+  // const [name, setName] = useState("");
+  // const [image, setImage] = useState("");
+  // const [Log, setLog] = useState(false);
+
+  // useEffect(() => {
+  //   if (localStorage.getItem("email")) {
+  //     setIsSigned(true);
+  //     setName(localStorage.getItem("name"));
+  //     setImage(localStorage.getItem("image"));
+  //     setLog(localStorage.getItem("email"));
+  //   }
+  // });
+  // const logout = () => {
+  //   //FB.logout();
+  //   //clearTimeout(localStorage.getItem("interval_id"));
+    
+  //   console.log("Lady")
+  //   if(localStorage.getItem('start')<Date.now())
+  //   {
+
+  //     localStorage.removeItem('email');
+      
+  //     Router.push('/')
+  //   }
+  //   else
+  //   {
+
+  //     localStorage.removeItem('email');
+      
+  //     Router.reload('/')
+  //   }
+  // };
     
 
     // this.submit = this.submit.bind(this);
@@ -192,6 +231,7 @@ export default function game() {
                   submit={submit}
                 // submit2={this.submit2}
                 />
+                
                 <style jsx>{`
             div {
               text-align: center;
@@ -199,11 +239,36 @@ export default function game() {
               margin-bottom:100px;
             }
           `}</style>
-              </div>
-              <div className='footerBuff'>
+          <div className="Ruleb">
+          <Rules>Rules</Rules>
+          </div>
+          </div>
+              {/* <div className='footerBuff'>
 
-              </div>
+              </div> */}
             </div>
+            <div style={{display:"inline-flex", justifyContent:"normal",position:"relative"}}>
+            {/* {Log && (
+          <div className="userDetails-wrapper">
+            <div className="details-wrapper">
+              <GoogleLogout
+                render={(renderProps) => (
+                  <div>
+                    <Link href="/">
+                      <MenuItem onClick={logout}><Typography style={{ color: '#FFFFFF', fontFamily:"'Russo One', sans-serif", fontSize:18 }}>Logout</Typography></MenuItem>
+                    </Link>
+                  </div>
+                )}
+                onLogoutSuccess={logout}
+              />
+            </div>
+            
+          
+          </div>
+        ) } */}
+        {/* <Rules>Rules</Rules> */}
+        </div>
+        
           </Layout>
           : <Loader />}
       </>

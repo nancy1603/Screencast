@@ -66,6 +66,8 @@ function Timeline() {
     }
   };
 
+  
+
     return (
         <>
         <div className="head">
@@ -133,7 +135,7 @@ function Timeline() {
                     </div>
                     </div>
                     <div className={styles.wrapper}>
-                    <Rules>Rules</Rules>
+                    {/* <Rules>Rules</Rules> */}
                     <div>
             {isSignedIn ? (
               <div>
@@ -167,8 +169,8 @@ function Timeline() {
                 onLogoutSuccess={logout}
               />
             </div>
-            {/* <div className="bar" /> */}
-            {/* <div className="stand" /> */}
+            
+            
           </div>
         ) }
         </div>
