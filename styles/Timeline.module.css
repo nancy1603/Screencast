@@ -104,7 +104,7 @@ border-image-source: linear-gradient(109.43deg, rgba(97, 236, 153, 0.83) 2.44%, 
     top: 170px;
     background: linear-gradient(112.76deg, rgba(255, 255, 255, 0.01) 7.77%, rgba(255, 255, 255, 0.005) 87.65%);
     box-shadow: 0px 4px 24px -2px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(60px);
+    backdrop-filter: blur(100px);
     /* Note: backdrop-filter has minimal browser support */
     border: 3px solid #00c6e9;
     
@@ -132,6 +132,7 @@ border-image-source: linear-gradient(109.43deg, rgba(97, 236, 153, 0.83) 2.44%, 
     .level{
     /* position: absolute; */
     position: relative;
+    
     width: 143px;
     height: 30px;
     left: 15px;
@@ -142,6 +143,20 @@ border-image-source: linear-gradient(109.43deg, rgba(97, 236, 153, 0.83) 2.44%, 
     line-height: 22px;
     text-align: center;
     color: #00e9e9;
+    }
+
+    .active{position: relative;
+        width: 143px;
+        height: 30px;
+        left: 15px;
+        font-family: Bruno Ace;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 22px;
+        text-align: center;
+        color: white;
+
     }
     .ava{
         color: white;

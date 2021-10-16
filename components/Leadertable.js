@@ -76,16 +76,33 @@ export default function Leadertable() {
   const classes = useStyles();
 
   useEffect(() => {
-    axios
+    function getTimeline(){
+      axios
       .get(process.env.api + "/api/leaderboard")
       .then((response) => {
         setRankList(response.data);
+        
 
       })
-      .then(() => {
-        setloaded(true);
-      });
+      
+
+    }
+    // axios
+    //   .get(process.env.api + "/api/leaderboard")
+    //   .then((response) => {
+    //     setRankList(response.data);
+        
+
+    //   })
+    
+      getTimeline()
+      setloaded(true)
+      const interval= setInterval(()=> getTimeline(), 10000)
+      return () => {
+        clearInterval(interval);
+      }
   }, []);
+
 
   return (
     <div>

@@ -15,6 +15,8 @@ import MenuItem from "@material-ui/core/MenuItem";
 import { GoogleLogout } from "react-google-login";
 import Router from "next/router";
 import Typography from "@material-ui/core/Typography";
+import axios from "axios";
+import { Rowing } from '@material-ui/icons';
 
 // const useStyles = makeStyles((theme) => ({
 //     Timeline:{
@@ -33,9 +35,14 @@ import Typography from "@material-ui/core/Typography";
 function Timeline() {
     // const classes = useStyles();
     const [isSignedIn, setIsSigned] = useState(false);
+    const[level, setLevel] = useState("");
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
   const [Log, setLog] = useState(false);
+  const [loaded, setloaded] = useState([]);
+  const [userlevel, setUserlevel]= useState("");
+  
+  
 
   useEffect(() => {
     if (localStorage.getItem("email")) {
@@ -66,7 +73,43 @@ function Timeline() {
     }
   };
 
+  useEffect(()=>{
+   axios
+   .get(process.env.api + "/api/status")
+   .then((response)=>{
+    localStorage.setItem("level", response.data.round_questions);
+    setLevel(localStorage.getItem('level'))
+
+    // var tnp=[];
+    // for(var i=1; i<=parseInt(level); i++){
+    //   console.log("loop");
+    //   tnp.push(
+    //     <div className={styles.levelContainer} key={i}>
+    //                     <div className={styles.level} key={i}>
+    //                         LEVEL {i}
+    //                         </div> </div>);
+
+    
+    // }
+    // setTimeline(tnp => [...tnp,`${tnp.length}`]);
+   })
+   axios
+   .get(process.env.api + "/api/timeline",{
+    headers: {
+      Authorization: "Bearer " + localStorage.getItem("token"),
+    },
+   })
+   .then((response)=>{
+     setUserlevel(response.data.current_question)
+   })
+   .then(() => {
+    setloaded(true);
+  });
+  },[]);
   
+  // const runCallback=(cb)=>{
+  //   return cb();
+  // };
 
     return (
         <>
@@ -81,58 +124,54 @@ function Timeline() {
             </div>
         </div>
         <div>
+        { (loaded === true) ?
+        // {
+        //   runCallback(() => {
+        //     const row = [];
+        //     for (var i=0; i<= {level}; i++){
+        //       row.push(<div className="containerfigure">
+        //       <div className={styles.levelContainer} key={i}>
+        //                   <div className={styles.level} key={i}>
+        //                       LEVEL {i}
+        //                       </div>
+        //               </div>
+        //               </div>
+        //               )
+        //     }
+        //   })
+        // }
             <div className="figure">
                 <div className="containerfigure">
-            <div className={styles.levelContainer}>
-                        <div className={styles.level}>
-                            LEVEL 1
-                            </div>
-                    </div>
-                    <div className={styles.levelContainer}>
-                        <div className={styles.level}>
-                            LEVEL 2
-                        </div>
-                    </div>
-                    <div className={styles.levelContainer}>
-                        <div className={styles.level}>
-                            LEVEL 3
-                        </div>
-                    </div>
-                    <div className={styles.levelContainer}>
-                        <div className={styles.level}>
-                            LEVEL 4
-                        </div>
-                    </div>
-                    <div className={styles.levelContainer}>
-                        <div className={styles.level}>
-                            LEVEL 5
-                        </div>
-                    </div>
-                    <div className={styles.levelContainer}>
-                        <div className={styles.level}>
-                            LEVEL 6
-                        </div>
-                    </div>
-                    <div className={styles.levelContainer}>
-                        <div className={styles.level}>
-                            LEVEL 7
-                        </div>
-                    </div>
-                    <div className={styles.levelContainer}>
-                        <div className={styles.level}>
-                            LEVEL 8
-                        </div>
-                    </div>
-                    <div className={styles.levelContainer}>
-                        <div className={styles.level}>
-                            LEVEL 9
-                        </div>
-                    </div>
-                    <div className={styles.levelContainer}>
-                        <div className={styles.level}>
-                            LEVEL 10
-                        </div>
-                    </div>
+                      {
+                        // for(var i=1; i<=parseInt(level); i++){
+                        //   return
+                        //  <div className={styles.levelContainer} key={i}>
+                        //   <div className={styles.level} key={i}>
+                        //   LEVEL {i}
+                        //   </div>
+                        //   </div>}
+                        Array.apply(0,Array(parseInt(level))).map(function(x,i){
+                          console.log("level");
+                          if(parseInt (userlevel) === i+1){
+                            return(
+                              <div className={styles.levelContainer} key={i}>
+                                <div className={styles.active}>
+                                  LEVEL {i+1}
+                                </div>
+                              </div>
+                            )
+                          }else{
+                          
+                          return (
+                          
+                          <div className={styles.levelContainer} key={i}>
+                          <div className={styles.level}>
+                              LEVEL {i+1}
+                              </div>
+                              </div>
+                              )}
+                        })
+                      }
                     </div>
                     <div className={styles.wrapper}>
                     {/* <Rules>Rules</Rules> */}
@@ -174,7 +213,7 @@ function Timeline() {
           </div>
         ) }
         </div>
-        
+    :(<div></div>)}
         </div>
         </>
     )
