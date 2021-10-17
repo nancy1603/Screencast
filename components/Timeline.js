@@ -156,7 +156,7 @@ function Timeline(props) {
                           console.log("level");
                           if(parseInt (props.userlevel) === i+1){
                             return(
-                              <div className={styles.levelContainer} key={i}>
+                              <div className={styles.activelevelContainer} key={i}>
                                 <div className={styles.active}>
                                   LEVEL {i+1}
                                 </div>

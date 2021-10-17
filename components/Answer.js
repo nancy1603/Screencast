@@ -89,10 +89,10 @@ const useStyles = (theme) => ({
     height: "50px",
     background: "linear-gradient(112.76deg, rgba(255, 255, 255, 0.04) 7.77%, rgba(255, 255, 255, 0.01) 87.65%)",
     backdropFilter: "blur(100px)",
-    border: "5px solid #064244",
+    border: "4px solid #4dcfe0",
     // borderImageSource: "linear-gradient(279.48deg, rgba(97, 236, 153, 0.83) 13.18%, #121B17 33.21%, #064438 61.54%, rgba(4, 132, 109, 0.72) 85.72%)",
     borderRadius: "15px",
-    boxShadow: "1px 1px 2px rgba(1, 247, 247, 0.72)",
+    // boxShadow: "1px 1px 2px rgba(1, 247, 247, 0.72)",
     margin:"10px auto",
     textAlign: "center",
     fontSize:"17px",
@@ -106,9 +106,9 @@ const useStyles = (theme) => ({
     // bottom:0,
     borderRadius:"15px", 
     padding:"5px", 
-    webkitMask:"linear-gradient (45deg, #064244) content-box, linear-gradient(45deg,#064244)",
-    webkitMaskComposite: "destination-out", 
-    maskComposite: "exclude", 
+    // webkitMask:"linear-gradient (45deg, #064244) content-box, linear-gradient(45deg,#064244)",
+    // webkitMaskComposite: "destination-out", 
+    // maskComposite: "exclude", 
 
     
     '&::placeholder':{

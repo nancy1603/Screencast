@@ -11,7 +11,8 @@ function DrawerRight() {
     return (
         <>
         <Button onClick={toggleDrawer(true)}
-        style={{color:"white", fontSize:"20px"}}>RIGHT</Button>
+        className="flicker"
+        style={{color:"#4dcfe0", fontSize:"18px", fontWeight:"bold"}}>LEADERBOARD</Button>
         <Drawer
         anchor={'right'}
         width={'100%'}

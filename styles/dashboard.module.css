@@ -53,8 +53,12 @@ position: relative;
     /* background-color: white 0%; */
     /* margin:15px; */
     padding:10px;
-    /* overflow: scroll; */
+    overflow-y: scroll;
+    
 
+}
+.TimelineContainer::-webkit-scrollbar {
+    display: none;
 }
 .MainContainer{
     align-content:center;
@@ -66,8 +70,12 @@ position: relative;
     /* background-color: black 0%; */
     /* margin:15px;  */
     padding:10px; 
-    /* overflow: scroll; */
+    overflow-y: scroll;
+    /* visibility: hidden; */
 
+}
+.MainContainer::-webkit-scrollbar {
+    display: none;
 }
 .LeadtableContainer{
     align-content:center;
@@ -79,8 +87,12 @@ position: relative;
     /* background-color: black 0%; */
     /* margin:15px; */
     padding:10px;
-    /* overflow: scroll; */
+    overflow-y: scroll;
+    
 
+}
+.LeadtableContainer::-webkit-scrollbar {
+    display: none;
 }
 @media only screen and (max-width: 1230px) {
 .Container{

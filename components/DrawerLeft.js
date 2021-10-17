@@ -11,7 +11,8 @@ function DrawerLeft(props) {
     return (
         <>
         <Button onClick={toggleDrawer(true)}
-        style={{color:"white", fontSize:"20px"}}>Left</Button>
+        className="flicker"
+        style={{color:"#4dcfe0", fontSize:"18px", fontWeight:"bold"}}>TIMELINE</Button>
         <Drawer
         anchor={'left'}
         width={'100%'}
@@ -19,7 +20,7 @@ function DrawerLeft(props) {
         onClose={toggleDrawer(false)}>
             <div 
             onClick={toggleDrawer(false)}
-            style={{backgroundColor:"black", height:"1000vh", minWidth:"100vh-100px"}}>
+            style={{backgroundColor:"black", height:"1000vh", width:"50vh"}}>
             <Timeline level={props.level} userlevel={props.userlevel} loaded={props.loaded}/>
             </div>
             </Drawer>
