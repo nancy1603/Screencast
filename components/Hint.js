@@ -107,16 +107,17 @@ export default function SimplePopover(props) {
       <Button
         className="btnSubmit"
         variant="contained"
-        color="black"
+        color="primary"
         elevation={3}
         onClick={props.submit}
-        style={{ backgroundColor:" #4dcfe0",
-        border: "0px solid white", 
+        style={{ backgroundColor:"#4dcfe0",
+        color:"black",
+        // border: "0px solid white", 
         height: "40px", width: "100px", 
         // borderTopRightRadius: "16px", 
         // borderBottomLeftRadius: "16px" 
-        background: "linear-gradient(112.76deg, rgba(255, 255, 255, 0.02) 7.77%, rgba(255, 255, 255, 0.005) 87.65%)",
-          backdropFilter: "blur(100px)",
+        // background: "linear-gradient(112.76deg, rgba(255, 255, 255, 0.02) 7.77%, rgba(255, 255, 255, 0.005) 87.65%)",
+        //   backdropFilter: "blur(100px)",
           borderRadius: "15px",
       }}
       >

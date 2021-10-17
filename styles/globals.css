@@ -187,6 +187,7 @@ body::-webkit-scrollbar {
 .btnSubmit {
     margin: 5px;
     padding: 5px;
+    background-color: #4dcfe0;
 }
 
 .login-head {
