@@ -16,7 +16,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import { Typography } from "@material-ui/core";
 import Rules from "./Rules";
 
-export default function game() {
+export default function game(props) {
   
     
       const [answer,setAnswer]= useState(""),
@@ -32,6 +32,8 @@ export default function game() {
       [v,setV]=useState(""),
       [loaded,setLoaded]=useState(false)
       const [isSignedIn, setIsSigned] = useState(false);
+      
+
   // const [name, setName] = useState("");
   // const [image, setImage] = useState("");
   // const [Log, setLog] = useState(false);
@@ -198,6 +200,7 @@ export default function game() {
           AnsAlert(1);
           setAnswer("");
           getQuestions();
+          props.handleLevel();
         } 
         else if (r && response.data.quiz_finished) {
           AnsAlert(1);
@@ -220,7 +223,7 @@ export default function game() {
               style={{ marginRight: "auto", marginLeft: "auto", textAlign: "center", minHeight: "100vh-100px" }}
               questions
             >
-              <Question qs={questions} qsNo={qsNo} audio={audio} image={image} day={day} />
+              <Question qs={questions} qsNo={qsNo} audio={audio} image={image} day={day} level={props.level} userlevel={props.userlevel} loaded={props.loaded}handleLevel={props.handleLevel}/>
               <div>
                 <Answer
                   change={change}

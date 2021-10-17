@@ -777,6 +777,7 @@ body::-webkit-scrollbar {
 .figure{
     
         margin: 0 auto;
+        /* overflow: scroll; */
         /* padding: 40px; */
         
     
@@ -786,6 +787,7 @@ body::-webkit-scrollbar {
     padding: 15px;
     align-content: center;
     margin: 0 auto;
+    /* overflow: scroll; */
     
 }
 .Ruleb{

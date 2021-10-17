@@ -3,7 +3,7 @@ import { Button } from '@material-ui/core';
 import { Drawer } from '@material-ui/core';
 import Timeline from './Timeline';
 
-function DrawerLeft() {
+function DrawerLeft(props) {
     const [state,setState]= React.useState(false)
     const toggleDrawer=(open) => (event) => {
         setState(open)
@@ -20,7 +20,7 @@ function DrawerLeft() {
             <div 
             onClick={toggleDrawer(false)}
             style={{backgroundColor:"black", height:"1000vh", minWidth:"100vh-100px"}}>
-            <Timeline/>
+            <Timeline level={props.level} userlevel={props.userlevel} loaded={props.loaded}/>
             </div>
             </Drawer>
             
