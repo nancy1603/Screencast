@@ -1,6 +1,7 @@
 import React , {useState,useEffect}from 'react'
 import LeadTable from '../components/LeadTable';
 import Main from '../components/Main';
+import Login from '../components/Login';
 import Timeline from '../components/Timeline';
 import styles from '../styles/dashboard.module.css';
 import Router from "next/router";
@@ -12,6 +13,39 @@ function dashboard() {
     const [userlevel, setUserlevel]= useState("");
     const [level,setLevel]= useState("");
     const [loaded,setloaded]= useState(false);
+    const [isLoggedin,setIsLoggedin]=useState(false);
+
+    const checkLogin = ()=>{
+      if(localStorage.getItem('token') === null ){
+        setIsLoggedin(false)
+        console.log("1");
+        
+      }else{
+          setIsLoggedin(true)
+          console.log("2");
+          console.log("dashboard");
+        axios
+        .get(process.env.api + "/api/status")
+        .then((response)=>{
+         setLevel(response.data.round_questions)
+        })
+        axios
+        .get(process.env.api + "/api/timeline",{
+         headers: {
+           Authorization: "Bearer " + localStorage.getItem("token"),
+         },
+        })
+        .then((response)=>{
+          setUserlevel(response.data.current_question)
+        })
+        .then(() => {
+         setloaded(true);
+       });
+        }
+      }
+
+    
+    
     const handleLevel = ()=>{
         axios
         .get(process.env.api + "/api/status")
@@ -33,45 +67,44 @@ function dashboard() {
         
     }
     useEffect(()=>{
-        axios
-        .get(process.env.api + "/api/status")
-        .then((response)=>{
-         // localStorage.setItem("level", response.data.round_questions);
-         // setLevel(localStorage.getItem('level'))
-         setLevel(response.data.round_questions)
-     
-         // var tnp=[];
-         // for(var i=1; i<=parseInt(level); i++){
-         //   console.log("loop");
-         //   tnp.push(
-         //     <div className={styles.levelContainer} key={i}>
-         //                     <div className={styles.level} key={i}>
-         //                         LEVEL {i}
-         //                         </div> </div>);
-     
-         
-         // }
-         // setTimeline(tnp => [...tnp,`${tnp.length}`]);
-        })
-        axios
-        .get(process.env.api + "/api/timeline",{
-         headers: {
-           Authorization: "Bearer " + localStorage.getItem("token"),
-         },
-        })
-        .then((response)=>{
-          setUserlevel(response.data.current_question)
-        })
-        .then(() => {
-         setloaded(true);
-       });
+
+      checkLogin();
+
+      
+      // console.log("dashboard");
+      //   axios
+      //   .get(process.env.api + "/api/status")
+      //   .then((response)=>{
+      //    setLevel(response.data.round_questions)
+      //   })
+      //   axios
+      //   .get(process.env.api + "/api/timeline",{
+      //    headers: {
+      //      Authorization: "Bearer " + localStorage.getItem("token"),
+      //    },
+      //   })
+      //   .then((response)=>{
+      //     setUserlevel(response.data.current_question)
+      //   })
+      //   .then(() => {
+      //    setloaded(true);
+      //  });
+       
        },[]);
    return (
         
         <div className={styles.Container}>
             <div className={styles.cont}>
-            <div className={styles.TimelineContainer}><Timeline level={level} userlevel={userlevel} loaded={loaded}/></div>
-            <div className={styles.MainContainer}><Main level={level} userlevel={userlevel} loaded={loaded} handleLevel={handleLevel}/></div>
+            <div className={styles.TimelineContainer}>
+             {isLoggedin? (<Timeline level={level} userlevel={userlevel} loaded={loaded}/>):(<><div className="show" style={{color:"white", height:"calc(100vh - 80px)", width:"566px"}}>PLEASE LOG IN!</div></>)}</div>
+            <div className={styles.MainContainer}>
+              {isLoggedin? (<Main level={level} userlevel={userlevel} loaded={loaded} handleLevel={handleLevel} isLoggedin={isLoggedin}/>):(
+              <div className="show"
+              style={{margin:"25px"}}>
+              <Login isLoggedin={isLoggedin}/>
+              </div>
+              )}
+                </div>
             <div className={styles.LeadtableContainer}><LeadTable/></div>
             </div>
             </div>

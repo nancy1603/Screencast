@@ -16,7 +16,9 @@ import { Dashboard } from "@material-ui/icons";
 import Footers from "../components/Footers"
 
 function index() {
-
+  
+  
+  
 
   return (
    <div className={styles.dashboard}> 
@@ -38,7 +40,7 @@ function index() {
       </div>
       
     </div>
-         <Login />
+         <Login/>
     </div>
 
   </div>

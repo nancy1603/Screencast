@@ -1,10 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Button } from '@material-ui/core';
 import { Drawer } from '@material-ui/core';
 import Timeline from './Timeline';
 
 function DrawerLeft(props) {
-    const [state,setState]= React.useState(false)
+    const [state,setState]= React.useState(false);
+    // const [isLoggedin,setIsLoggedin]= useState(false);
     const toggleDrawer=(open) => (event) => {
         setState(open)
     }
@@ -21,7 +22,7 @@ function DrawerLeft(props) {
             <div 
             onClick={toggleDrawer(false)}
             style={{backgroundColor:"black", height:"1000vh", width:"50vh"}}>
-            <Timeline level={props.level} userlevel={props.userlevel} loaded={props.loaded}/>
+            {props.isLoggedin ? (<Timeline level={props.level} userlevel={props.userlevel} loaded={props.loaded}/>):<><div style={{color:"white"}}>PLEASE LOG IN</div></>}
             </div>
             </Drawer>
             

@@ -223,7 +223,7 @@ export default function game(props) {
               style={{ marginRight: "auto", marginLeft: "auto", textAlign: "center", minHeight: "100vh-100px" }}
               questions
             >
-              <Question qs={questions} qsNo={qsNo} audio={audio} image={image} day={day} level={props.level} userlevel={props.userlevel} loaded={props.loaded}handleLevel={props.handleLevel}/>
+              <Question qs={questions} qsNo={qsNo} audio={audio} image={image} day={day} level={props.level} userlevel={props.userlevel} loaded={props.loaded}handleLevel={props.handleLevel} isLoggedin={props.isLoggedin}/>
               <div>
                 <Answer
                   change={change}

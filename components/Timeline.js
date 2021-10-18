@@ -40,12 +40,10 @@ function Timeline(props) {
   const [name, setName] = useState("");
   const [image, setImage] = useState("");
   const [Log, setLog] = useState(false);
-  // const [loaded, setloaded] = useState([]);
-  // const [userlevel, setUserlevel]= useState("");
-  
   
 
   useEffect(() => {
+    
     if (localStorage.getItem("email")) {
       setIsSigned(true);
       setName(localStorage.getItem("name"));
@@ -62,14 +60,14 @@ function Timeline(props) {
     {
 
       localStorage.removeItem('email');
-      
+      localStorage.removeItem('token');
       Router.push('/')
     }
     else
     {
 
       localStorage.removeItem('email');
-      
+      localStorage.removeItem('token');
       Router.reload('/')
     }
   };
@@ -173,8 +171,7 @@ function Timeline(props) {
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           
           {Log && (
-          // <div className="userDetails-wrapper">
-            // <div className="details-wrapper">
+          
               <GoogleLogout
                 render={(renderProps) => (
                   <div>
@@ -189,18 +186,15 @@ function Timeline(props) {
                 )}
                 onLogoutSuccess={logout}
               />
-            // </div>
-            
-            
-          // </div>
+           
         ) }
         </div>
         
         </div> 
     :(<div></div>)}
     </div>
-    
-        </>
+   </>
+        
     )
 }
 export default Timeline

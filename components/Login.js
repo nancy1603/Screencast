@@ -5,6 +5,8 @@ import Router from "next/router";
 import styles from "../styles/index.module.css";
 import axios from "axios";
 import Loader from "./Loader";
+import DrawerLeft from "./DrawerLeft";
+import DrawerRight from "./DrawerRight";
 
 
 export default function Login(props) {
@@ -55,6 +57,7 @@ export default function Login(props) {
         <div>
             { (loading === true) ?
         <>
+        <div className="arrow" style={{color:"black 0%",fontSize:"20px"}}><DrawerLeft level={props.level} userlevel={props.userlevel} loaded={props.loaded} isLoggedin={props.isLoggedin}/><DrawerRight/></div>
           <div className={styles.login}>
             {/*<Timer2 start={start} end={end} />*/}
 

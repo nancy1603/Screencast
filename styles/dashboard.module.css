@@ -55,7 +55,7 @@ overflow: scroll;
     left: 25px;
     /* top:28px; */
     /* background-color: white 0%; */
-    /* margin:15px; */
+    margin:15px;
     padding:10px;
     overflow-y: scroll;
     
@@ -72,7 +72,7 @@ overflow: scroll;
     left: 1322px;
     top:28px;
     /* background-color: black 0%; */
-    /* margin:15px;  */
+    margin:15px; 
     padding:10px; 
     overflow-y: scroll;
     /* visibility: hidden; */
@@ -89,7 +89,7 @@ overflow: scroll;
     left: 1300px;
     top:28px;
     /* background-color: black 0%; */
-    /* margin:15px; */
+    margin:15px;
     padding:10px;
     overflow-y: scroll;
     
@@ -97,6 +97,10 @@ overflow: scroll;
 }
 .LeadtableContainer::-webkit-scrollbar {
     display: none;
+}
+.show{
+    display:flex;
+    margin: 10px;
 }
 @media only screen and (max-width: 1230px) {
 .Container{
