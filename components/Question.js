@@ -44,6 +44,7 @@ export default function Question(props) {
   return (
     
     <div>
+      <div className="stick">
       <div className="arrow" style={{color:"black 0%",fontSize:"20px"}}><DrawerLeft level={props.level} userlevel={props.userlevel} loaded={props.loaded}/><DrawerRight/></div>
       <div className="head">
         <div
@@ -57,6 +58,8 @@ export default function Question(props) {
           <span className="flicker">SCREENCAST</span>
         </div>
       </div>
+      </div>
+      <div className="Nstick">
       <Typography
           className={classes.title}
           style={{ fontFamily: "'Montserrat', sans-serif",color:"#fff"}}
@@ -100,6 +103,7 @@ export default function Question(props) {
             <div></div>
           )}
       </CardContent>
+      </div>
     </div>
   );
 }

@@ -15,7 +15,9 @@ body {
     z-index: 0;
     background-color: rgba(10, 10, 10, 0);
     position: relative;
-    overflow: scroll;
+    overflow: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 .back {
@@ -434,8 +436,11 @@ body::-webkit-scrollbar {
 .Ruleb{
     display: flex;
     justify-content: center;
-    align-items: center;
-    height:100px;
+    align-items: center; 
+    padding:10px;
+    width:104%;
+    /* margin: 5px; */
+    /* margin-bottom:100px;
     
     
     /* position:relative;
@@ -444,4 +449,7 @@ body::-webkit-scrollbar {
     left:50%;
     -ms-transform: translate(-10%,-10%);
     transform: translate(-10%,-10%); */
+}
+.stick{
+    position:sticky;
 }

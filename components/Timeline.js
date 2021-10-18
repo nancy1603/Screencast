@@ -15,6 +15,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import { GoogleLogout } from "react-google-login";
 import Router from "next/router";
 import Typography from "@material-ui/core/Typography";
+import { Button } from '@material-ui/core';
 import axios from "axios";
 import { Rowing } from '@material-ui/icons';
 
@@ -126,33 +127,10 @@ function Timeline(props) {
         </div>
         <div>
         { (props.loaded === true) ?
-        // {
-        //   runCallback(() => {
-        //     const row = [];
-        //     for (var i=0; i<= {level}; i++){
-        //       row.push(<div className="containerfigure">
-        //       <div className={styles.levelContainer} key={i}>
-        //                   <div className={styles.level} key={i}>
-        //                       LEVEL {i}
-        //                       </div>
-        //               </div>
-        //               </div>
-        //               )
-        //     }
-        //   })
-        // }
-            <div className="figure">
+        <div className="figure">
                 <div className="containerfigure">
                       {
-                        // for(var i=1; i<=parseInt(level); i++){
-                        //   return
-                        //  <div className={styles.levelContainer} key={i}>
-                        //   <div className={styles.level} key={i}>
-                        //   LEVEL {i}
-                        //   </div>
-                        //   </div>}
-                        
-                       props.level>0 && Array.apply(0,Array(parseInt(props.level))).map(function(x,i){
+                        props.level>0 && Array.apply(0,Array(parseInt(props.level))).map(function(x,i){
                           console.log("level");
                           if(parseInt (props.userlevel) === i+1){
                             return(
@@ -176,9 +154,7 @@ function Timeline(props) {
                       }
                     </div>
                     <div className={styles.wrapper}>
-                    {/* <Rules>Rules</Rules> */}
-                    <div>
-            {isSignedIn ? (
+                    {isSignedIn ? (
               <div>
                 <Avatar
                   position="right"
@@ -194,30 +170,38 @@ function Timeline(props) {
             ) : (
                 <div></div>
               )}
-          </div>
-          </div>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          
           {Log && (
-          <div className="userDetails-wrapper">
-            <div className="details-wrapper">
+          // <div className="userDetails-wrapper">
+            // <div className="details-wrapper">
               <GoogleLogout
                 render={(renderProps) => (
                   <div>
                     <Link href="/">
-                      <MenuItem onClick={logout}><Typography style={{ color: '#FFFFFF', fontFamily:"'Russo One', sans-serif", fontSize:18 }}>Logout</Typography></MenuItem>
+                      <Button onClick={logout} style={{
+                        backgroundColor:"#4dcfe0",
+                        borderRadius:"15px",
+                        height: "40px", width: "100px", 
+                      }}>Logout</Button>
                     </Link>
                   </div>
                 )}
                 onLogoutSuccess={logout}
               />
-            </div>
+            // </div>
             
             
-          </div>
+          // </div>
         ) }
         </div>
+        
+        </div> 
     :(<div></div>)}
-        </div>
+    </div>
+    
         </>
     )
 }
 export default Timeline
+
