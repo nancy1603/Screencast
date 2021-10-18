@@ -34,7 +34,7 @@
 .cont{
 display:flex;
 width: 90%;
-margin: auto auto;
+margin: 0 auto;
 height: calc(100vh - 50px);
 border-radius: 30px;
 background: rgba(2, 52, 58, 0.3);
@@ -107,13 +107,14 @@ border-radius: 30px;
 left:10px;
 /* right:25px; */
 /* top: 10px;  */
-/* display:inherit; */
-padding: 20px;
+display:inherit;
+/* padding: 20px; */
 }
 .cont{
 top:0;
-height:calc(100vh - 5px);
+/* height:calc(100vh - 5px); */
 width: 90%;
+/* padding: 20px; */
 }
 
 .TimelineContainer{
