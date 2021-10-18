@@ -1,17 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Cabin+Sketch&family=Montserrat:wght@500&family=Russo+One&family=Monoton&display=swap");
+.dashboard::-webkit-scrollbar{
+  display: none;
+}
+.glasscontainer::-webkit-scrollbar{
+  display: none;
+}
+.dashboard{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.glasscontainer{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 .dashboard {
     
     background-image: url('../public/bgg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    overflow-x: hidden;
+    
     height: 100vh;
     padding: 40px 0;
     margin: 0px;
     width: 100%;
     min-height: 105vh;
-    position: absolute;
+    position: fixed;
     background-repeat: no-repeat;
     z-index: -99;
    
@@ -26,6 +40,7 @@
     border: 4px solid #4dcfe0;
     backdrop-filter: blur(5px);
     position: relative;
+    overflow: auto;
     
    }
   
@@ -162,7 +177,7 @@
     text-decoration: none;
     text-transform: uppercase;
     background: linear-gradient(99.4deg, #0B8C95 14.06%, #7EEAF1 87.56%);
-    padding: 15px 10px;
+    padding: 12px 12px;
     border-radius: 30px;
     text-align: center;
     margin-right: 30px;
@@ -171,6 +186,10 @@
     width: 100px;
     cursor: pointer;
     border: 2px solid transparent;
+    background: rgba(2, 52, 58, 0.3);
+    backdrop-filter: blur(5px);
+    color: #7EEAF1;
+    border: 3px solid #7eeaf1;
   }
   
   .btn:hover,
@@ -223,6 +242,9 @@
     }
     .logo{
       font-size: 70px;
+    }
+    .dashboard{
+      overflow:auto;
     }
   }
 

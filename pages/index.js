@@ -22,12 +22,12 @@ function index() {
    <div className={styles.dashboard}> 
   <div className={styles.glasscontainer}>
     <div className={styles.nave}>
-      <div className={styles.logo}>SCREEN<span>CAST</span></div>
+      <div className={styles.logo}>GEEK<span>TOBER</span></div>
     </div>
 
     <div className={styles.main}>
     <div className={styles.innercontent}>
-      <h1>GEEKTOBER QUIZ</h1>
+      <h1>GAME IS LIVE</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat esse, aperiam minus distinctio debitis repellendus pariatur provident tempora cum ex quam adipisci ipsum quo ipsa ratione nostrum. Aut, dolores qui.</p>
        
       <div className={styles.buttons}>

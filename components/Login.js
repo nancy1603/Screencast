@@ -56,7 +56,7 @@ export default function Login(props) {
             { (loading === true) ?
         <>
           <div className={styles.login}>
-            <Timer2 start={start} end={end} />
+            {/*<Timer2 start={start} end={end} />*/}
 
             
               <div 
