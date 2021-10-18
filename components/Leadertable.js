@@ -38,7 +38,8 @@ const StyledTableRow = withStyles((theme) => ({
   root: {
     "&:nth-of-type(1)": {
       backgroundColor: "#064244 !important",
-      color: "#000 !important"
+      color: "#000 !important",
+      // backdropFilter: "blur(2px) !important"
     },
     "&:nth-of-type(2)": {
       backgroundColor: "#064244 !important",

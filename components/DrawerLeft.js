@@ -22,7 +22,23 @@ function DrawerLeft(props) {
             <div 
             onClick={toggleDrawer(false)}
             style={{backgroundColor:"black", height:"1000vh", width:"50vh"}}>
-            {props.isLoggedin ? (<Timeline level={props.level} userlevel={props.userlevel} loaded={props.loaded}/>):<><div style={{color:"white"}}>PLEASE LOG IN</div></>}
+            {props.isLoggedin ? (<Timeline level={props.level} userlevel={props.userlevel} loaded={props.loaded}/>
+            ):<>
+            <div className="head">
+          <div className="container neon-box" style={{
+            textAlign: "center",
+            fontSize: "25px",
+            fontFamily: "'Russo One', sans-serif",
+            // color:"white"
+          }}>
+            <span className="flicker">TIMELINE</span>
+            </div>
+        </div>
+            <div className="showMob">
+                <div className="flicker" style={{fontSize:"30px",padding:"50px 50px", alignItems:"center"}}>
+                PLEASE LOGIN FIRST!
+                </div>
+            </div></>}
             </div>
             </Drawer>
             

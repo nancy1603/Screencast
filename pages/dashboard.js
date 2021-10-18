@@ -96,13 +96,42 @@ function dashboard() {
         <div className={styles.Container}>
             <div className={styles.cont}>
             <div className={styles.TimelineContainer}>
-             {isLoggedin? (<Timeline level={level} userlevel={userlevel} loaded={loaded}/>):(<><div className="show" style={{color:"white", height:"calc(100vh - 80px)", width:"566px"}}>PLEASE LOG IN!</div></>)}</div>
+             {isLoggedin? (<Timeline level={level} userlevel={userlevel} loaded={loaded}/>):(<>
+              <div className="head">
+          <div className="container neon-box" style={{
+            textAlign: "center",
+            fontSize: "25px",
+            fontFamily: "'Russo One', sans-serif",
+            // color:"white"
+          }}>
+            <span className="flicker">TIMELINE</span>
+            </div>
+        </div>
+             <div className={styles.show}>
+               <div className="flicker" style={{fontSize:"30px",padding:"110px", alignItems:"center", display:"inline-flex"}}>
+             PLEASE LOGIN FIRST!
+             </div>
+             </div></>)}
+             </div>
             <div className={styles.MainContainer}>
               {isLoggedin? (<Main level={level} userlevel={userlevel} loaded={loaded} handleLevel={handleLevel} isLoggedin={isLoggedin}/>):(
+               <>
+               <div className="head">
+               <div className="container neon-box"
+             style={{
+               textAlign: "center",
+               fontSize: "29px",
+               fontFamily: "'Russo One', sans-serif",
+             }}>
+             <span className="flicker">SCREENCAST</span>
+           </div>
+         </div>
               <div className="show"
               style={{margin:"25px"}}>
+               
               <Login isLoggedin={isLoggedin}/>
               </div>
+              </>
               )}
                 </div>
             <div className={styles.LeadtableContainer}><LeadTable/></div>
