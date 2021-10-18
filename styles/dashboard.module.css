@@ -114,6 +114,7 @@ display:inherit;
 top:0;
 /* height:calc(100vh - 5px); */
 width: 90%;
+overflow: hidden;
 /* padding: 20px; */
 }
 
