@@ -57,7 +57,7 @@ export default function Login(props) {
         <div>
             { (loading === true) ?
         <>
-        <div className="arrow" style={{color:"black 0%",fontSize:"20px"}}><DrawerLeft level={props.level} userlevel={props.userlevel} loaded={props.loaded} isLoggedin={props.isLoggedin}/><DrawerRight/></div>
+        <div className="arrow" style={{color:"black 0%",fontSize:"20px"}}><DrawerLeft level={props.level} userlevel={props.userlevel} loaded={props.loaded} isLoggedin={props.isLoggedin}/>&nbsp;&nbsp;&nbsp;&nbsp;<DrawerRight/></div>
           <div className={styles.login}>
             {/*<Timer2 start={start} end={end} />*/}
 
