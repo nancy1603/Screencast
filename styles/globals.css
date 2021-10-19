@@ -23,7 +23,7 @@ body {
 .back {
     margin: 0px;
     width: 100%;
-    min-height: 105vh;
+    min-height: 100vh;
     position: absolute;
     overflow: hidden;
     background-attachment: fixed;

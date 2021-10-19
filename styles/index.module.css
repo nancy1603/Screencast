@@ -22,23 +22,24 @@
     
     height: 100vh;
     padding: 40px 0;
-    margin: 0px;
+
     width: 100%;
-    min-height: 105vh;
+    min-height: 100vh;
     position: fixed;
     background-repeat: no-repeat;
     z-index: -99;
+    overflow: hidden;
    
   }
   
   .glasscontainer {
     width: 90%;
-    margin: auto auto;
     height: calc(100vh - 50px);
+    margin: auto;
     border-radius: 30px;
     background: rgba(2, 52, 58, 0.3);
     border: 4px solid #4dcfe0;
-    backdrop-filter: blur(5px);
+    /*backdrop-filter: blur(5px);*/
     position: relative;
     overflow: scroll;
     
@@ -264,11 +265,7 @@
       width: 100%;
       left: 50%;
     }*/
-    .glasscontainer{
-      /*height:calc(160vh - 5px);*/
-      width: 90%;
-      
-    }
+    
     .logo{
       font-size: 70px;
     }

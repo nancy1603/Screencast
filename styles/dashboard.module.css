@@ -26,8 +26,8 @@
     padding: 40px 0;
     margin: 0px;
     width: 100%;
-    min-height: 105vh;
-    position: absolute;
+    min-height: 100vh;
+    position: fixed;
     background-repeat: no-repeat;
     z-index: -99; 
 }
@@ -51,7 +51,7 @@ overflow: scroll;
     align-content:center;
     width:566px;
     /* height:1022px; */
-    height:calc(100vh - 80px);
+    /*height:calc(100vh - 80px);*/
     left: 25px;
     /* top:28px; */
     /* background-color: white 0%; */
@@ -74,8 +74,9 @@ overflow: scroll;
     /* background-color: black 0%; */
     /* margin:15px;  */
     padding:10px; 
-    overflow-y: scroll;
+    overflow-x: hidden;
     /* visibility: hidden; */
+    
 
 }
 .MainContainer::-webkit-scrollbar {
@@ -143,7 +144,7 @@ justify-content: center;
 align-content: center; 
 width:100%;
 height:100%; 
-overflow: scroll;
+overflow-x: hidden;
  
 }
 .LeadtableContainer{
