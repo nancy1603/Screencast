@@ -26,7 +26,6 @@ body {
     min-height: 105vh;
     position: absolute;
     overflow: hidden;
-    background-size: auto 110vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
