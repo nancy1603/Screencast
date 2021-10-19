@@ -34,11 +34,6 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/dashboard.js"
     ],
-    "/error": [
-      "static/chunks/main.js",
-      "static/chunks/webpack.js",
-      "static/chunks/pages/error.js"
-    ],
     "/next/dist/pages/_error": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",

@@ -272,9 +272,9 @@
     .logo{
       font-size: 70px;
     }
-   /*.btns{
+   .btns{
      display: none;
-   }*/
+   }
   }
 
   @media screen and (max-width: 710px){
