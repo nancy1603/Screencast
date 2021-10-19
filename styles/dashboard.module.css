@@ -41,7 +41,7 @@ background: rgba(2, 52, 58, 0.3);
 border: 4px solid #4dcfe0;
 backdrop-filter: blur(5px);
 position: relative;
-overflow: auto;
+overflow: scroll;
 /* top:0px; */
 }
 .cont::-webkit-scrollbar {
@@ -57,7 +57,7 @@ overflow: auto;
     /* background-color: white 0%; */
     margin:15px;
     padding:10px;
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
     
 
 }
@@ -74,7 +74,7 @@ overflow: auto;
     /* background-color: black 0%; */
     margin:15px; 
     padding:10px; 
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
     /* visibility: hidden; */
 
 }
@@ -91,7 +91,7 @@ overflow: auto;
     /* background-color: black 0%; */
     margin:15px;
     padding:10px;
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
     
 
 }
