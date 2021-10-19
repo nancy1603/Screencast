@@ -126,10 +126,8 @@ function dashboard() {
              <span className="flicker">SCREENCAST</span>
            </div>
          </div>
-              <div className="show"
-              style={{margin:"25px"}}>
-               
-              <Login isLoggedin={isLoggedin}/>
+              <div className={styles.logC}>
+               <Login isLoggedin={isLoggedin}/>
               </div>
               </>
               )}

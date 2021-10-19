@@ -5,7 +5,7 @@ import Layout from "../components/Layout";
 export default function leaderboard() {
   return (
     <Layout>
-      <div style={{ textAlign: "center" }}>
+      <div style={{ textAlign: "center"}}>
         <div className="head">
           <div
             className="container neon-box"
@@ -18,7 +18,9 @@ export default function leaderboard() {
             <span className="flicker">LEADERBOARD</span>
           </div>
         </div>
+        <div className="leadWrapper">
         <Leadertable />
+        </div>
       </div>
     </Layout>
   );

@@ -55,7 +55,7 @@ overflow: scroll;
     left: 25px;
     /* top:28px; */
     /* background-color: white 0%; */
-    margin:15px;
+    /* margin:15px; */
     padding:10px;
     overflow-y: scroll;
     
@@ -72,7 +72,7 @@ overflow: scroll;
     left: 1322px;
     top:28px;
     /* background-color: black 0%; */
-    margin:15px; 
+    /* margin:15px;  */
     padding:10px; 
     overflow-y: scroll;
     /* visibility: hidden; */
@@ -89,7 +89,7 @@ overflow: scroll;
     left: 1300px;
     top:28px;
     /* background-color: black 0%; */
-    margin:15px;
+    /* margin:15px; */
     padding:10px;
     overflow-y: scroll;
     
@@ -103,13 +103,17 @@ overflow: scroll;
       align-items: center;
       flex-direction: column;
       padding-right: 5%;
-      margin:30px;
+      margin: 30px;
       padding: 10px 50px;
       height: 50%;
       background: rgba(2, 52, 58, 0.3);
       backdrop-filter: blur(2px);
       border-radius: 40px;
 }
+.logC{
+    margin:25px;
+}
+
 @media only screen and (max-width: 1230px) {
 .Container{
 /* display:inherit;
@@ -144,5 +148,8 @@ overflow: scroll;
 }
 .LeadtableContainer{
 display:none;
+}
+.logC{
+    margin:0;
 }
 }
