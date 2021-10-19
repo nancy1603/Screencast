@@ -108,7 +108,7 @@ function dashboard() {
             </div>
         </div>
              <div className={styles.show}>
-               <div className="flicker" style={{fontSize:"30px",padding:"110px", alignItems:"center", display:"inline-flex"}}>
+               <div className="flicker" style={{fontSize:"30px", alignItems:"center", display:"inline-flex", position:"absolute",height:"40vh"}}>
              PLEASE LOGIN FIRST!
              </div>
              </div></>)}

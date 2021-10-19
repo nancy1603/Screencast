@@ -35,7 +35,7 @@ function DrawerLeft(props) {
             </div>
         </div>
             <div className="showMob">
-                <div className="flicker" style={{fontSize:"30px",padding:"50px 50px", alignItems:"center"}}>
+                <div className="flicker" style={{fontSize:"25px", alignItems:"center",height:"40vh", position:"relative",display:"inline-flex"}}>
                 PLEASE LOGIN FIRST!
                 </div>
             </div></>}
