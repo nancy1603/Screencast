@@ -35,16 +35,16 @@ function index() {
       <div className={styles.buttons}>
       <Rules />
       <Link href='/dashboard'>
-      <a className={styles.btn}>Explore</a>
+      <a className={styles.btns}>Explore</a>
       </Link>
       </div>
       
     </div>
          <Login/>
     </div>
-
+        <Footers />
   </div>
-  <Footers />
+  
 </div>
  
 

@@ -201,6 +201,36 @@
     border: 2px solid #7eeaf1;
     
   }
+  .btns {
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: linear-gradient(99.4deg, #0B8C95 14.06%, #7EEAF1 87.56%);
+    padding: 12px 12px;
+    border-radius: 30px;
+    text-align: center;
+    margin-right: 30px;
+    font-size: 40;
+    font-weight: 900;
+    width: 100px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    background: rgba(2, 52, 58, 0.3);
+    backdrop-filter: blur(5px);
+    color: #7EEAF1;
+    border: 3px solid #7eeaf1;
+  }
+  
+  .btns:hover,
+  .btns:focus {
+    
+    background: rgba(2, 52, 58, 0.3);
+    backdrop-filter: blur(5px);
+    color: #7EEAF1;
+    border: 2px solid #7eeaf1;
+    
+  }
   .buttons{
     display: flex;
     align-items: center;
@@ -209,9 +239,8 @@
   }
   @media screen and (max-width: 1230px) {
     .innercontent {
-      padding-top: 5%;
+      padding: 5%;
       flex-basis: 40%;
-      padding-bottom: 5%;
       flex: 1;
     }
     .main{
@@ -225,7 +254,7 @@
     .innercontent p{
       padding-top: 3%;
     }
-    .login{
+    /*.login{
       
       flex-basis: 40%;
       
@@ -234,7 +263,7 @@
     .imgg{
       width: 100%;
       left: 50%;
-    }
+    }*/
     .glasscontainer{
       /*height:calc(160vh - 5px);*/
       width: 90%;
@@ -243,19 +272,22 @@
     .logo{
       font-size: 70px;
     }
-    
+   /*.btns{
+     display: none;
+   }*/
   }
 
   @media screen and (max-width: 710px){
     .logo{
       font-size: 60px;
     }
+    
   }
   
 @media screen and (max-width: 600px){
-  .login{
+  /*.login{
     padding: 10px 35px;
-  }
+  }*/
   .innercontent h1{
     font-size: 40px;
   }
@@ -264,21 +296,28 @@
     .logo{
       font-size: 55px;
     }
-    .login{
+    /*.login{
       flex-basis: 30%;
       padding: 10px 30px;
       height: 82%;
       }
       .imgg{
         width: 80%;
-        /*transform: translateY(-30px);*/
+        transform: translateY(-30px);
+        }*/
+        .innercontent{
+          padding-left: 7%;
+          padding-right: 7%;
         }
-
+        
     }
 
     @media screen and (max-width: 450px) {
       .logo{
         font-size: 45px;
+      }
+      .innercontent h1{
+        font-size: 35px;
       }
     } 
 
