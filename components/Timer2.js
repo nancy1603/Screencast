@@ -55,14 +55,14 @@ export default function Timer(props) {
                   <span className="flicker">SCREENCAST</span>
                 </div>
               </div>
-                    <div className="flicker" style={{ backgroundColor:"rgba(0,0,0,0)",padding: "0", margin: "0 auto" , fontFamily:"'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"
+                    <div className={styles.timer}style={{ backgroundColor:"rgba(0,0,0,0)",padding: "0", margin: "0 auto" , fontFamily:"'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"
                                     }}>
                         
                             <div className={styles.show3}style={{ textAlign: "center", fontSize: "17px", justifyContent:"center"}}>
                                 <h1>
                                     {props.message}&nbsp;&nbsp;
-                                    <div className={styles.tile} >
-                                    <>{zeroPad(days, 2)}</>:<>{zeroPad(hours)}</>:<>{zeroPad(minutes)}</>:<>{zeroPad(seconds)}</>
+                                    <div className={styles.tile}>
+                                    <div className={styles.tile2}>{zeroPad(days, 2)}</div>&nbsp;:&nbsp;<div className={styles.tile3}>{zeroPad(hours)}</div>&nbsp;:&nbsp;<div className={styles.tile4}>{zeroPad(minutes)}</div>&nbsp;:&nbsp;<div className={styles.tile5}>{zeroPad(seconds)}</div>
                                     </div>
                                 </h1>
                                 <h1>

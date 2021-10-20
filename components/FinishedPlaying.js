@@ -6,10 +6,10 @@ import styles from '../styles/FinishedPlaying.module.css';
 function FinishedPlaying(props) {
     return (
         <div>
-            <div className="arrow" style={{color:"black 0%",fontSize:"20px"}}>
+            {/* <div className="arrow" style={{color:"black 0%",fontSize:"20px"}}>
                 <DrawerLeft level={props.level} userlevel={props.userlevel} loaded={props.loaded} isLoggedin={props.isLoggedin}/>
                 <DrawerRight/>
-                </div>
+                </div> */}
                   <div className="head">
                   <div className="container neon-box"
                 style={{

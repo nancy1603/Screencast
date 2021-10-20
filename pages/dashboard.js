@@ -267,11 +267,11 @@ function dashboard() {
              )}
              </div>
             <div className={styles.MainContainer}>
-              {isLoggedin && !quizFinished ? (<>
-                <div className="arrow" style={{color:"black 0%",fontSize:"20px"}}>
+            <div className="arrow" style={{color:"black 0%",fontSize:"20px"}}>
                 <DrawerLeft level={level} userlevel={userlevel} loaded={loaded} isLoggedin={isLoggedin} quizFinished={quizFinished}/>
                 <DrawerRight/>
                 </div>
+              {isLoggedin && !quizFinished ? (<>
                 <Main level={level} userlevel={userlevel} loaded={loaded} handleLevel={handleLevel} isLoggedin={isLoggedin}/></>):(
                !quizFinished ? (<>
                 <div className="head">

@@ -41,7 +41,7 @@ background: rgba(2, 52, 58, 0.3);
 border: 4px solid #4dcfe0;
 backdrop-filter: blur(5px);
 position: relative;
-/*overflow: scroll;*/
+overflow: scroll;
 /* top:0px; */
 }
 .cont::-webkit-scrollbar {
@@ -92,7 +92,7 @@ position: relative;
     /* background-color: black 0%; */
     /* margin:15px; */
     padding:10px;
-    overflow-y: scroll;
+    overflow: auto;
     
 
 }
