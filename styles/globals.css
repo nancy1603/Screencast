@@ -475,3 +475,15 @@ body::-webkit-scrollbar {
 .leadWrapper::-webkit-scrollbar {
     display: none;
 }
+.arrow1{
+    display:none;
+}
+@media only screen and (max-width: 1230px) {
+    .arrow1{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        /* width:fit-content; */
+    }
+}
