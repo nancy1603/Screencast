@@ -1,13 +1,13 @@
 import React from 'react'
-// import DrawerLeft2 from './DrawerLeft2'
+import DrawerLeft from './DrawerLeft'
 import DrawerRight from './DrawerRight'
 import styles from '../styles/FinishedPlaying.module.css';
 
 function FinishedPlaying(props) {
     return (
         <div>
-            <div className="arrow1" style={{color:"black 0%",fontSize:"20px"}}>
-                {/* <DrawerLeft2 level={props.level} userlevel={props.userlevel} loaded={props.loaded}/> */}
+            <div className="arrow" style={{color:"black 0%",fontSize:"20px"}}>
+                <DrawerLeft level={props.level} userlevel={props.userlevel} loaded={props.loaded} isLoggedin={props.isLoggedin}/>
                 <DrawerRight/>
                 </div>
                   <div className="head">

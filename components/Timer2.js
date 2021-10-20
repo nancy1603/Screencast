@@ -1,7 +1,9 @@
 import React from 'react'
 import Router from "next/router";
 import Countdown, { zeroPad } from 'react-countdown';
-import styles from "../styles/Timer2.module.css"
+import styles from "../styles/Timer2.module.css";
+import DrawerLeft from './DrawerLeft';
+import DrawerRight from './DrawerRight';
 
 export default function Timer(props) {
     console.log(props)
@@ -38,6 +40,9 @@ export default function Timer(props) {
         } else {
             return (
                 <>
+                {/* <div className="arrow" style={{color:"black 0%",fontSize:"20px"}}>
+                    {/* <DrawerLeft level={props.level} userlevel={props.userlevel} loaded={props.loaded} isLoggedin={props.isLoggedin}/> */}
+                    {/* <DrawerRight/></div>  */}
                 <div className="head">
                 <div
                   className="container neon-box"
@@ -56,7 +61,9 @@ export default function Timer(props) {
                             <div className={styles.show3}style={{ textAlign: "center", fontSize: "17px", justifyContent:"center"}}>
                                 <h1>
                                     {props.message}&nbsp;&nbsp;
+                                    <div className={styles.tile} >
                                     <>{zeroPad(days, 2)}</>:<>{zeroPad(hours)}</>:<>{zeroPad(minutes)}</>:<>{zeroPad(seconds)}</>
+                                    </div>
                                 </h1>
                                 <h1>
                                     Game is not live yet !

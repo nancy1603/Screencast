@@ -6,8 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import AudioHint from "./AudioHint";
 import { Data } from "react-f/lib/src/form";
 import ResponsiveImage from './ImageHint'
-import DrawerLeft from "./DrawerLeft";
-import DrawerRight from "./DrawerRight";
+
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
@@ -45,7 +44,7 @@ export default function Question(props) {
     
     <div>
       <div className="stick">
-      <div className="arrow" style={{color:"black 0%",fontSize:"20px"}}><DrawerLeft level={props.level} userlevel={props.userlevel} loaded={props.loaded} isLoggedin={props.isLoggedin}/><DrawerRight/></div>
+      {/* <div className="arrow" style={{color:"black 0%",fontSize:"20px"}}><DrawerLeft level={props.level} userlevel={props.userlevel} loaded={props.loaded} isLoggedin={props.isLoggedin}/><DrawerRight/></div> */}
       <div className="head">
         <div
           className="container neon-box"

@@ -150,6 +150,8 @@ import Router from "next/router";
 import axios from "axios";
 import FinishedPlaying from '../components/FinishedPlaying';
 import Footers from '../components/Footers';
+import DrawerLeft from "../components/DrawerLeft";
+import DrawerRight from "../components/DrawerRight";
 
 
 
@@ -265,7 +267,12 @@ function dashboard() {
              )}
              </div>
             <div className={styles.MainContainer}>
-              {isLoggedin && !quizFinished ? (<Main level={level} userlevel={userlevel} loaded={loaded} handleLevel={handleLevel} isLoggedin={isLoggedin}/>):(
+              {isLoggedin && !quizFinished ? (<>
+                <div className="arrow" style={{color:"black 0%",fontSize:"20px"}}>
+                <DrawerLeft level={level} userlevel={userlevel} loaded={loaded} isLoggedin={isLoggedin} quizFinished={quizFinished}/>
+                <DrawerRight/>
+                </div>
+                <Main level={level} userlevel={userlevel} loaded={loaded} handleLevel={handleLevel} isLoggedin={isLoggedin}/></>):(
                !quizFinished ? (<>
                 <div className="head">
                 <div className="container neon-box"

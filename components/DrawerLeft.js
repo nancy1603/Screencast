@@ -23,22 +23,27 @@ function DrawerLeft(props) {
             onClick={toggleDrawer(false)}
             style={{backgroundColor:"black", height:"1000vh", width:"50vh"}}>
             {props.isLoggedin ? (<Timeline level={props.level} userlevel={props.userlevel} loaded={props.loaded}/>
-            ):<>
-            <div className="head">
-          <div className="container neon-box" style={{
-            textAlign: "center",
-            fontSize: "25px",
-            fontFamily: "'Russo One', sans-serif",
-            // color:"white"
-          }}>
-            <span className="flicker">TIMELINE</span>
-            </div>
-        </div>
-            <div className="showMob">
-                <div className="flicker" style={{fontSize:"25px", alignItems:"center",height:"40vh", position:"relative",display:"inline-flex"}}>
-                PLEASE LOGIN FIRST!
-                </div>
-            </div></>}
+            ):(
+                <><div className="head">
+                <div className="container neon-box" style={{
+                  textAlign: "center",
+                  fontSize: "25px",
+                  fontFamily: "'Russo One', sans-serif",
+                  // color:"white"
+                }}>
+                  <span className="flicker">TIMELINE</span>
+                  </div>
+              </div>
+                  <div className="showMob">
+                      <div className="flicker" style={{fontSize:"25px", alignItems:"center",height:"40vh", position:"relative",display:"inline-flex"}}>
+                      PLEASE LOGIN FIRST!
+                      </div>
+                  </div></>)}
+                  
+                 {/* {
+                props.quizFinished? (
+                <Timeline level={props.level} userlevel={props.userlevel} loaded={props.loaded}/>):(<></>)
+              }  */}
             </div>
             </Drawer>
             
