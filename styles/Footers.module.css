@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    bottom: -50px;
+    bottom: -40px;
    
 }
 
@@ -16,9 +16,9 @@
    
 }
 
-@media screen and (max-width: 530px){
+/*@media screen and (max-width: 530px){
     .fonts{
         transform: translateY(-45px);
     }
-}
+}*/
 
