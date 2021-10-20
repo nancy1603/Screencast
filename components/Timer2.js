@@ -37,12 +37,26 @@ export default function Timer(props) {
             return <Completionist />;
         } else {
             return (
-                
-                    <div style={{ backgroundColor: "rgba(0,0,0,0)", padding: "0", margin: "0 auto" }}>
+                <>
+                <div className="head">
+                <div
+                  className="container neon-box"
+                  style={{
+                    textAlign: "center",
+                    fontSize: "29px",
+                    fontFamily: "'Russo One', sans-serif",
+                  }}
+                >
+                  <span className="flicker">SCREENCAST</span>
+                </div>
+              </div>
+                    <div className="flicker" style={{ backgroundColor:"rgba(0,0,0,0)",padding: "0", margin: "0 auto" , fontFamily:"'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"
+                                    }}>
                         
-                            <div style={{ textAlign: "center", fontSize: "17px", }}>
+                            <div className={styles.show3}style={{ textAlign: "center", fontSize: "17px", justifyContent:"center"}}>
                                 <h1>
-                                    {props.message}&nbsp;&nbsp;{zeroPad(days, 2)}:{zeroPad(hours)}:{zeroPad(minutes)}:{zeroPad(seconds)}
+                                    {props.message}&nbsp;&nbsp;
+                                    <>{zeroPad(days, 2)}</>:<>{zeroPad(hours)}</>:<>{zeroPad(minutes)}</>:<>{zeroPad(seconds)}</>
                                 </h1>
                                 <h1>
                                     Game is not live yet !
@@ -50,9 +64,10 @@ export default function Timer(props) {
                             </div>
                        
                     </div>
+                    </>
                 )
-
-        }
+            }
+        
     };
 
     return (

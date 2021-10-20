@@ -257,7 +257,7 @@ function dashboard() {
             </div>
         </div>
              <div className={styles.show}>
-               <div className="flicker" style={{fontSize:"30px", alignItems:"center", display:"inline-flex", position:"absolute",height:"40vh"}}>
+               <div className="flicker" style={{fontSize:"30px", alignItems:"center", display:"flex",justifyContent:"center",height:"40vh"}}>
              PLEASE LOGIN FIRST!
              </div>
              </div>
@@ -286,7 +286,7 @@ function dashboard() {
                 quizFinished? (
                 <FinishedPlaying/>):(<></>)
               }
-              <Footers/>
+              {/* <Footers/> */}
               </div>
                 
             <div className={styles.LeadtableContainer}><LeadTable/></div>

@@ -21,7 +21,7 @@ function FinishedPlaying(props) {
               </div>
             </div>
                 <div className={styles.showF}>
-                  <div className="flicker" style={{fontSize:"25px", alignItems:"center", justigyContent:"center",display:"inline-flex", position:"absolute",height:"40vh"}}>
+                  <div className="flicker" style={{fontSize:"30px", alignItems:"center", justigyContent:"center",display:"flex",height:"40vh"}}>
                 THANKS FOR PLAYING!
                 {/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
                 {/* BE BACK SOON! */}
