@@ -1,30 +1,30 @@
 
 
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Cabin+Sketch&family=Montserrat:wght@500&family=Russo+One&family=Monoton&display=swap");
-body {
-    /* min-height: 100vh; */
-    display: flex;
+ /*body {
+    
+   /* display: flex;
     flex-direction: column;
     font-family: "Barlow", sans-serif;
     /* color: "#fff"; */
-    -ms-overflow-style: none;
+    /*-ms-overflow-style: none;
     /* IE and Edge */
-    scrollbar-width: none;
+    /*scrollbar-width: none;
     /* Firefox */
     /* overflow: hidden; */
-    z-index: 0;
+   /* z-index: 0;
     background-color: rgba(10, 10, 10, 0);
     position: relative;
     overflow: hidden;
     -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
+ /* scrollbar-width: none;  /* Firefox */
+/*} */
 
 .back {
     margin: 0px;
     width: 100%;
     min-height: 100vh;
-    position: absolute;
+    position: fixed;
     overflow: hidden;
     background-attachment: fixed;
     background-position: center;
@@ -40,7 +40,7 @@ body::-webkit-scrollbar {
 @media only screen and (max-width: 600px) {
     .back {
         background-image: url("../public/bgg.jpg");
-        background-size: auto 110vh;
+        /*background-size: auto 110vh;*/
     }
 }
 

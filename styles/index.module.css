@@ -20,7 +20,7 @@
     background-position: center;
     background-attachment: fixed;
     
-    height: 100vh;
+    /*height: 100vh;*/
     padding: 40px 0;
 
     width: 100%;
@@ -34,12 +34,12 @@
   
   .glasscontainer {
     width: 90%;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 80px);
     margin: auto;
     border-radius: 30px;
     background: rgba(2, 52, 58, 0.3);
     border: 4px solid #4dcfe0;
-    /*backdrop-filter: blur(5px);*/
+    backdrop-filter: blur(5px);
     position: relative;
     overflow: scroll;
     
