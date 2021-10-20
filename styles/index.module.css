@@ -35,7 +35,7 @@
   .glasscontainer {
     width: 90%;
     height: calc(100vh - 90px);
-    margin: auto;
+    margin: auto auto;
     border-radius: 30px;
     background: rgba(2, 52, 58, 0.3);
     border: 4px solid #4dcfe0;
@@ -272,11 +272,17 @@
    .btns{
      display: none;
    }
+   .glasscontainer{
+    height: calc(100vh - 105px);
+   }
   }
 
   @media screen and (max-width: 710px){
     .logo{
       font-size: 60px;
+    }
+    .btn{
+      padding: 15px 15px;
     }
     
   }

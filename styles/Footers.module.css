@@ -4,7 +4,6 @@
     justify-content: center;
     position: relative;
     bottom: -40px;
-   
 }
 
 .icons{
@@ -16,9 +15,9 @@
    
 }
 
-/*@media screen and (max-width: 530px){
+@media screen and (max-width: 710px){
     .fonts{
-        transform: translateY(-45px);
+        padding-bottom: 20px;
     }
-}*/
+}
 
