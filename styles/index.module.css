@@ -273,9 +273,9 @@
    /*.glasscontainer{
     height: calc(100vh - 100px);
    }*/
-   .btns{
+   /*.btns{
      display: none;
-   }
+   }*/
   }
 
   @media screen and (max-width: 710px){
