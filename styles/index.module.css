@@ -269,9 +269,7 @@
     .logo{
       font-size: 70px;
     }
-   .btns{
-     display: none;
-   }
+   
    .glasscontainer{
     height: calc(100vh - 100px);
    }

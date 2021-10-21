@@ -52,65 +52,15 @@ function Timeline(props) {
     }
   });
   const logout = () => {
-    //FB.logout();
-    //clearTimeout(localStorage.getItem("interval_id"));
-    
     console.log("Lady")
-    if(localStorage.getItem('start')<Date.now())
-    {
-
       localStorage.removeItem('email');
       localStorage.removeItem('token');
       Router.push('/')
-    }
-    else
-    {
-
-      localStorage.removeItem('email');
-      localStorage.removeItem('token');
-      Router.reload('/')
-    }
+    
   };
 
-  // useEffect(()=>{
-  //  axios
-  //  .get(process.env.api + "/api/status")
-  //  .then((response)=>{
-  //   // localStorage.setItem("level", response.data.round_questions);
-  //   // setLevel(localStorage.getItem('level'))
-  //   setLevel(response.data.round_questions)
-
-  //   // var tnp=[];
-  //   // for(var i=1; i<=parseInt(level); i++){
-  //   //   console.log("loop");
-  //   //   tnp.push(
-  //   //     <div className={styles.levelContainer} key={i}>
-  //   //                     <div className={styles.level} key={i}>
-  //   //                         LEVEL {i}
-  //   //                         </div> </div>);
-
-    
-  //   // }
-  //   // setTimeline(tnp => [...tnp,`${tnp.length}`]);
-  //  })
-  //  axios
-  //  .get(process.env.api + "/api/timeline",{
-  //   headers: {
-  //     Authorization: "Bearer " + localStorage.getItem("token"),
-  //   },
-  //  })
-  //  .then((response)=>{
-  //    setUserlevel(response.data.current_question)
-  //  })
-  //  .then(() => {
-  //   setloaded(true);
-  // });
-  // },[]);
   
-  // const runCallback=(cb)=>{
-  //   return cb();
-  // };
-
+  
     return (
         <>
         <div className="head">
