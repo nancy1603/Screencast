@@ -18,7 +18,8 @@ import MenuItem from "@material-ui/core/MenuItem";
 import { Typography } from "@material-ui/core";
 import Rules from "./Rules";
 import Timer2 from "../components/Timer2"
-// import Footers from "./Footers";
+
+ import Footer from "./Footer";
 
 export default function game(props) {
   
@@ -231,7 +232,7 @@ export default function game(props) {
         ) } */}
         {/* <Rules>Rules</Rules> */}
         </div>
-        
+                  <Footer />
           </Layout>
           : <Loader />
           }

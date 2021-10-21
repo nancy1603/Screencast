@@ -78,7 +78,13 @@ body::-webkit-scrollbar {
     border-radius: 6px;
     z-index: 1000;
 } */
-
+.glug_logo{
+  position: relative;
+  width: 10%;
+  height: 10%;
+  align-items: center;
+  font-size: 10px;
+}
 .fbbutton {
     background-color: rgba(0, 0, 0, 0);
     border: none;

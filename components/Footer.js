@@ -12,7 +12,7 @@ function Footer() {
             textAlign: "center",
             backgroundColor: "rgba(0,0,0,0)",
             color: "#eee",
-            height: "100px",
+            height: "80px",
             bottom: "0",
             right: "0", left: "0",
             position: "relative",//changed
@@ -45,7 +45,7 @@ function Footer() {
                   </a> */}
                   
                 </div>
-                <h5 style={{ left: "0", right: "0", color: "#eee", }}>HOSTED & CREATED BY GNU/LINUX USERS' GROUP</h5>
+                
         </div>
 
     </div>

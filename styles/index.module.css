@@ -130,7 +130,7 @@
       flex-direction: column;
       padding-right: 5%;
       padding: 10px 50px;
-      height: 85%;
+      height: 90%;
       background: rgba(2, 52, 58, 0.3);
       backdrop-filter: blur(2px);
       border-radius: 40px;
@@ -273,7 +273,7 @@
      display: none;
    }
    .glasscontainer{
-    height: calc(100vh - 105px);
+    height: calc(100vh - 100px);
    }
   }
 
@@ -284,27 +284,32 @@
     .btn{
       padding: 15px 15px;
     }
-    
+    .innercontent{
+      padding: 65px;
+    }
   }
   
 @media screen and (max-width: 600px){
-  /*.login{
-    padding: 10px 35px;
-  }*/
+  .login{
+    padding: 10px 40px;
+  }
   .innercontent h1{
     font-size: 40px;
+  }
+  .innercontent{
+    padding: 42px;
   }
 }
 @media screen and (max-width: 530px){
     .logo{
       font-size: 55px;
     }
-    /*.login{
-      flex-basis: 30%;
+    .login{
+      
       padding: 10px 30px;
-      height: 82%;
+      
       }
-      .imgg{
+      /*.imgg{
         width: 80%;
         transform: translateY(-30px);
         }*/
@@ -314,7 +319,15 @@
         }
         
     }
-
+    @media screen and (max-width: 505px){
+      .login{
+      
+        padding: 10px 30px;
+        padding-left: 2%;
+        padding-right: 2%;
+        
+        }
+    }
     @media screen and (max-width: 450px) {
       .logo{
         font-size: 45px;
@@ -322,6 +335,22 @@
       .innercontent h1{
         font-size: 35px;
       }
+      .login{
+        padding: 10px 10px;
+        padding-left: 7%;
+        padding-right: 7%;
+      }
+      /*.imgg{
+        width: 90%;
+      }*/
     } 
-
-  
+    @media screen and (max-width: 430px){
+      .login{
+        flex-basis: 30%;
+        backdrop-filter: blur(0px);
+      }
+      .imgg{
+        width: 90%;
+      }
+    }
+   
