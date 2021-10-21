@@ -14,14 +14,14 @@ function FinishedPlaying(props) {
                   <div className="container neon-box"
                 style={{
                   textAlign: "center",
-                  fontSize: "29px",
+                  fontSize: "25px",
                   fontFamily: "'Russo One', sans-serif",
                 }}>
                 <span className="flicker">SCREENCAST</span>
               </div>
             </div>
                 <div className={styles.showF}>
-                  <div className="flicker" style={{fontSize:"30px", alignItems:"center", justigyContent:"center",display:"flex",height:"40vh"}}>
+                  <div className="flicker" style={{fontSize:"30px", display:"flex", alignItems:"center", justifyContent:"center",height:"40vh"}}>
                 THANKS FOR PLAYING!
                 {/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
                 {/* BE BACK SOON! */}
