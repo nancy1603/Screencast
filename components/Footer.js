@@ -8,16 +8,16 @@ function Footer() {
       <div
         className="footer"
           style={{
-            margin:"auto",//changed
+            /*margin:"auto",//changed*/
             textAlign: "center",
             backgroundColor: "rgba(0,0,0,0)",
             color: "#eee",
-            height: "80px",
+            /*height: "80px",*/
             bottom: "0",
             right: "0", left: "0",
             position: "relative",//changed
             padding: "0",
-            marginTop: "100px",
+            /*marginTop: "100px",*/
             width:"100%"
 
           }}

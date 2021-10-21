@@ -232,7 +232,7 @@ export default function game(props) {
         ) } */}
         {/* <Rules>Rules</Rules> */}
         </div>
-                  <Footer />
+                  
           </Layout>
           : <Loader />
           }
