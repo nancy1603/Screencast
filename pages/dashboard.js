@@ -260,7 +260,7 @@ function dashboard() {
         </div>
              <div className={styles.show}>
                <div className="flicker" style={{fontSize:"30px", alignItems:"center", display:"flex",justifyContent:"center",height:"40vh"}}>
-             PLEASE LOGIN FIRST!
+             LOGIN HERE!
              </div>
              </div>
              </>
@@ -278,7 +278,7 @@ function dashboard() {
                 <div className="container neon-box"
               style={{
                 textAlign: "center",
-                fontSize: "29px",
+                fontSize: "25px",
                 fontFamily: "'Russo One', sans-serif",
               }}>
               <span className="flicker">SCREENCAST</span>

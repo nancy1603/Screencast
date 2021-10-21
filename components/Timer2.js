@@ -24,7 +24,17 @@ export default function Timer(props) {
                     <div style={{ textAlign: "center", fontSize: "17px",  }}>
                        
                         <h1>
+                        <div className="flicker"
+                        style={{
+                            textAlign:"center",
+                            fontSize: "25px",
+                            display:"flex",
+                            justifyContent:"center"
+                
+                        }}>
                             Game is live !
+                        </div>
+                            
                         </h1>
                     </div>
                
@@ -48,7 +58,7 @@ export default function Timer(props) {
                   className="container neon-box"
                   style={{
                     textAlign: "center",
-                    fontSize: "29px",
+                    fontSize: "25px",
                     fontFamily: "'Russo One', sans-serif",
                   }}
                 >
@@ -66,7 +76,20 @@ export default function Timer(props) {
                                     </div>
                                 </h1>
                                 <h1>
-                                    Game is not live yet !
+                                
+                        <div className="flicker"
+                        style={{
+                            textAlign:"center",
+                            fontSize: "25px",
+                            display:"flex",
+                            justifyContent:"center"
+                
+                        }}>
+                             Game is not live yet !
+                        </div>
+                            
+                        
+                                   
                                 </h1>
                             </div>
                        

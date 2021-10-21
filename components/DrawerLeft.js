@@ -21,7 +21,7 @@ function DrawerLeft(props) {
         onClose={toggleDrawer(false)}>
             <div 
             onClick={toggleDrawer(false)}
-            style={{backgroundColor:"black", height:"1000vh", width:"50vh"}}>
+            style={{backgroundColor:"black", height:"1000vh", minWidth:"40vh"}}>
             {props.isLoggedin ? (<Timeline level={props.level} userlevel={props.userlevel} loaded={props.loaded}/>
             ):(
                 <><div className="head">
@@ -36,7 +36,7 @@ function DrawerLeft(props) {
               </div>
                   <div className="showMob">
                       <div className="flicker" style={{fontSize:"25px", alignItems:"center",height:"40vh", position:"relative",display:"inline-flex"}}>
-                      PLEASE LOGIN FIRST!
+                      LOGIN FIRST!
                       </div>
                   </div></>)}
                   

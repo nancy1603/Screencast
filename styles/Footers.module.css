@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    bottom: -40px;
+    
+    
 }
 
 .icons{
@@ -17,7 +18,7 @@
 
 @media screen and (max-width: 710px){
     .fonts{
-        padding-bottom: 20px;
+        padding-bottom: 25px;
     }
 }
 
