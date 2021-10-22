@@ -175,6 +175,10 @@ function dashboard() {
         .get(process.env.api + "/api/status")
         .then((response)=>{
          setLevel(response.data.round_questions)
+         let temp2 = new Date(response.data.end_time).getTime() + new Date(response.data.end_time).getTimezoneOffset() * 60000;
+        if(temp2 < Date.now()){
+          setQuizFinished(true);
+        }
         })
         axios
         .get(process.env.api + "/api/timeline",{
@@ -202,7 +206,11 @@ function dashboard() {
         .then((response)=>{
          
          setLevel(response.data.round_questions)
-     
+         let temp2 = new Date(response.data.end_time).getTime() + new Date(response.data.end_time).getTimezoneOffset() * 60000;
+        if(temp2<Date.now()){
+          setQuizFinished(true);
+
+        }
          
         })
         axios
@@ -238,8 +246,7 @@ function dashboard() {
       //   })
       //   .then(() => {
       //    setloaded(true);
-      //  });
-       
+      //  }); 
        },[]);
    return (
         

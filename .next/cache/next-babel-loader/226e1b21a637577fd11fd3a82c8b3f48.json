@@ -1,1 +1,0 @@
-{"ast":null,"code":"var __jsx = React.createElement;\nimport '../style.css';\nimport React from 'react';\nimport App from 'next/app';\n\nclass MyApp extends App {\n  render() {\n    const {\n      Component,\n      pageProps\n    } = this.props;\n    return __jsx(Component, pageProps);\n  }\n\n}\n\nexport default MyApp;","map":null,"metadata":{},"sourceType":"module"}

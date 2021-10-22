@@ -1,1 +1,0 @@
-{"ast":null,"code":"var __jsx = React.createElement;\nimport React from \"react\";\nimport Navbar from \"./Navbar\";\nimport Footer from \"./Footer\";\nexport default function Layout(props) {\n  return __jsx(\"div\", null, __jsx(React.Fragment, null, __jsx(Navbar, null), props.children, __jsx(Footer, null)));\n}","map":null,"metadata":{},"sourceType":"module"}
