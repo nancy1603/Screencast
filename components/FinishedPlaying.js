@@ -21,11 +21,11 @@ function FinishedPlaying(props) {
               </div>
             </div>
                 <div className={styles.showF}>
-                  <div className="flicker" style={{fontSize:"30px", display:"flex", alignItems:"center", justifyContent:"center",height:"40vh"}}>
+                  <div className="flicker" ><div className={styles.fp}style={{fontSize:"27px", display:"flex", alignItems:"center", justifyContent:"center",height:"40vh"}}>
                 THANKS FOR PLAYING!
-                {/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
+                </div> 
                 {/* BE BACK SOON! */}
-                </div>
+             </div>
                 </div>
         </div>
     )

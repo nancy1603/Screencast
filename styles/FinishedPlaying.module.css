@@ -1,12 +1,29 @@
 .showF{
     justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding-right: 5%;
+    align-items: center;
+      /* flex-direction: column; */
+      
+      /* padding-right: 5%;
       margin: 30px;
       padding: 10px 50px;
-      height: 50vh;
-      background: rgba(2, 52, 58, 0.3);
+      height: 50vh; */
+      /* background: rgba(2, 52, 58, 0.3);
       backdrop-filter: blur(2px);
-      border-radius: 40px;
+      border-radius: 40px; */
+}
+.fp{
+  font-size:30 px;
+  display:flex; 
+  align-items:center;
+  justify-content:center;
+  height:"40vh"
+}
+
+@media only screen and (max-width: 1230px) {
+  .fp{
+  font-size:20px;
+  display:flex; 
+  align-items:center;
+  justify-content:center;
+  height:"40vh"}
 }

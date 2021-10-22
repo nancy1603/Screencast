@@ -20,7 +20,7 @@ function DrawerRight() {
         onClose={toggleDrawer(false)}>
             <div 
             onClick={toggleDrawer(false)}
-            style={{backgroundColor:"black", height:"1000vh",maxWidth:"45vh", width:"40vh"}}>
+            style={{backgroundColor:"black", height:"1000vh"}}>
             <LeadTable/>
             </div> 
             </Drawer>
