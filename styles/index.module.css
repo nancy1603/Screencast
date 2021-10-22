@@ -282,12 +282,16 @@
     .logo{
       font-size: 60px;
     }
-    .btn{
-      padding: 15px 15px;
-    }
+    
     .innercontent{
       padding: 65px;
     }
+    .glasscontainer{
+      height: calc(100vh - 100px);
+     }
+     .dashboard{
+       padding: 30px 0;
+     }
   }
   
 @media screen and (max-width: 600px){
@@ -300,6 +304,9 @@
   .innercontent{
     padding: 42px;
   }
+  .glasscontainer{
+    height: calc(100vh - 110px);
+   }
 }
 @media screen and (max-width: 530px){
     .logo{
