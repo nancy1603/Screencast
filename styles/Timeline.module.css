@@ -26,7 +26,7 @@
         display: block;
         padding: 10px;
         margin:10px auto;
-        width: 200px;
+        width: 160px;
         min-width:100px;
         height: 45px;
         left: 174px;
@@ -47,7 +47,7 @@
     /* position: absolute; */
     position: relative;
     
-    width: 143px;
+    width: 103px;
     height: 30px;
     left: 15px;
     font-family: Bruno Ace;
