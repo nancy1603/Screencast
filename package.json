@@ -30,6 +30,7 @@
     "react-f": "^0.1.2",
     "react-facebook-login": "^4.1.1",
     "react-google-login": "^5.1.21",
+    "react-icons": "^4.3.1",
     "react-image": "^2.4.0",
     "react-particles-js": "^3.3.0",
     "react-preloaders": "^3.0.3",

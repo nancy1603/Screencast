@@ -5,10 +5,9 @@ import Layout from "../components/Layout";
 export default function leaderboard() {
   return (
     <Layout>
-      <div style={{ textAlign: "center"}}>
+      {/* <div style={{ textAlign: "center"}}> */}
         <div className="head">
-        <div className="arrow" style={{color:"white"}}>Close</div>
-          <div
+        <div
             className="container neon-box"
             style={{
               textAlign: "center",
@@ -18,12 +17,11 @@ export default function leaderboard() {
           >
             <span className="flicker">LEADERBOARD</span>
         </div>
-          
-        </div>
+          </div>
         <div className="leadWrapper">
         <Leadertable />
         </div>
-      </div>
+      {/* </div> */}
     </Layout>
   );
 }
