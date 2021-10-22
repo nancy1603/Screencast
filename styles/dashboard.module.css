@@ -168,3 +168,9 @@ display:none;
     height: calc(100vh - 110px);
    }
 }
+
+@media screen and (max-width: 710px){
+     .dashboard{
+       padding: 30px 0;
+     }
+  }
