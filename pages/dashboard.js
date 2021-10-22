@@ -267,7 +267,7 @@ function dashboard() {
         </div>
              <div className={styles.show}>
                <div className="flicker" style={{fontSize:"30px", alignItems:"center", display:"flex",justifyContent:"center",height:"40vh"}}>
-             LOGIN HERE!
+             LOGIN FIRST!
              </div>
              </div>
              </>

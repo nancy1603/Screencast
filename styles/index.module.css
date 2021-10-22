@@ -270,9 +270,9 @@
       font-size: 70px;
     }
    
-   /*.glasscontainer{
-    height: calc(100vh - 100px);
-   }*/
+   .glasscontainer{
+    height: calc(100vh - 70px);
+   }
    /*.btns{
      display: none;
    }*/

@@ -29,8 +29,8 @@ function index() {
 
     <div className={styles.main}>
     <div className={styles.innercontent}>
-      <h1>GAME IS LIVE !</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat esse, aperiam minus distinctio debitis repellendus pariatur provident tempora cum ex quam adipisci ipsum quo ipsa ratione nostrum. Aut, dolores qui.</p>
+      <h1>Ready to play? </h1>
+      <p>We are all set to steer your quest for solving baffling enigmas concealed in questions. Dive deep into questions with your technical intellect and open source skills.</p>
        
       <div className={styles.buttons}>
       <Rules />

@@ -427,7 +427,10 @@ body::-webkit-scrollbar {
         margin: 0 auto;
         /* overflow: scroll; */
         /* padding: 40px; */
-        
+        min-height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     
 }
 .containerfigure {
