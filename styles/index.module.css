@@ -288,6 +288,9 @@
     .innercontent{
       padding: 65px;
     }
+    .glasscontainer{
+      height: calc(100vh - 100px);
+     }
   }
   
 @media screen and (max-width: 600px){
@@ -300,6 +303,9 @@
   .innercontent{
     padding: 42px;
   }
+  .glasscontainer{
+    height: calc(100vh - 110px);
+   }
 }
 @media screen and (max-width: 530px){
     .logo{
