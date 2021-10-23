@@ -162,6 +162,7 @@
     text-transform: uppercase;
     line-height: 1;
     margin-bottom: 20px;
+    font-family: 'Barlow', sans-serif;
   }
   
   .innercontent p {
@@ -170,6 +171,7 @@
     padding-top: 5%;
     font-size: 25px;
     padding-bottom: 3%;
+    font-family: 'Barlow', sans-serif;
   }
   
   .btn {

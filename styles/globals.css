@@ -484,7 +484,8 @@ body::-webkit-scrollbar {
       border-radius: 40px;
 }
 .leadWrapper{
-    overflow: scroll;
+    max-height:800px;
+    overflow-y: scroll;
 }
 .leadWrapper::-webkit-scrollbar {
     display: none;

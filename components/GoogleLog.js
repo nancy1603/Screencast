@@ -95,7 +95,7 @@ function GoogleLog(props) {
         ):
         (<div> 
           <Link href="/dashboard">
-          <Button style={{backgroundColor: "#4dcfe0", padding: "0" , width:"10px",color:"black",height: "40px", width: "100px", borderRadius: "15px"}}>Play</Button>
+          <Button style={{backgroundColor: "#4dcfe0", padding: "0" , width:"10px",color:"black",height: "40px", width: "100px", borderRadius: "15px", fontWeight:"bold"}}>PLAY</Button>
           </Link>
           </div>)
       }
