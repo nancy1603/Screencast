@@ -70,7 +70,7 @@ export default function Timer(props) {
                         
                             <div className={styles.show3}style={{ textAlign: "center", fontSize: "17px", justifyContent:"center"}}>
                                 <h1>
-                                    {props.message}&nbsp;&nbsp;
+                                    {/* {props.message}&nbsp;&nbsp; */}
                                     <div className={styles.tile}>
                                     <div className={styles.tile2}>{zeroPad(days, 2)}</div>&nbsp;:&nbsp;<div className={styles.tile3}>{zeroPad(hours)}</div>&nbsp;:&nbsp;<div className={styles.tile4}>{zeroPad(minutes)}</div>&nbsp;:&nbsp;<div className={styles.tile5}>{zeroPad(seconds)}</div>
                                     </div>

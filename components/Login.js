@@ -10,7 +10,7 @@ import Loader from "./Loader";
 
 export default function Login(props) {
 
-    const [end, setEnd] = useState(Date.now());
+  const [end, setEnd] = useState(Date.now());
   const [start, setStart] = useState(Date.now() + 2000);
   const [day, setDay] = useState(0);
   const [loading, setloading] = useState(false)
