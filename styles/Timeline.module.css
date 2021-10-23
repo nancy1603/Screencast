@@ -88,12 +88,12 @@
     }
     .log{
         position: sticky;
-        bottom:0;
-        height:5%;
-        width:100%;
+        bottom:5px;
+        
 
     }
     .wrapper{
+        
         display:flex; 
         margin:0 auto;
         /*padding: 10px;*/
