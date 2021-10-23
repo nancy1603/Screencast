@@ -72,7 +72,8 @@ export default function Timer(props) {
                                 <h1>
                                     {/* {props.message}&nbsp;&nbsp; */}
                                     <div className={styles.tile}>
-                                    <div className={styles.tile2}>{zeroPad(days, 2)}</div>&nbsp;:&nbsp;<div className={styles.tile3}>{zeroPad(hours)}</div>&nbsp;:&nbsp;<div className={styles.tile4}>{zeroPad(minutes)}</div>&nbsp;:&nbsp;<div className={styles.tile5}>{zeroPad(seconds)}</div>
+                                    <div className="r1"><div className={styles.tile2}>{zeroPad(days, 2)}</div>&nbsp;:&nbsp;<div className={styles.tile3}>{zeroPad(hours)}</div></div>
+                                    &nbsp;<div className="colon">:</div>&nbsp;<div className="r2"><div className={styles.tile4}>{zeroPad(minutes)}</div>&nbsp;:&nbsp;<div className={styles.tile5}>{zeroPad(seconds)}</div></div>
                                     </div>
                                 </h1>
                                 <h1>

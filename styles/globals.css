@@ -496,3 +496,15 @@ body::-webkit-scrollbar {
         /* width:fit-content; */
     }
 }
+.r1{
+    display: flex;
+}
+.r2{
+    display: flex;
+}
+
+@media only screen and (max-width: 700px){
+    .colon{
+        display: none;
+    }
+}
