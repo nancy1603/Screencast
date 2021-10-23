@@ -24,7 +24,6 @@ function GoogleLog(props) {
   useEffect(() => {
       if (localStorage.getItem("token")) {
         setIsUserLoggedIn(true);
-        Router.push("/dashboard");
       }
 
   }, []);
@@ -68,7 +67,7 @@ function GoogleLog(props) {
   return (
     <div>
       <div>
-        {!isUserLoggedIn && (
+        { !isUserLoggedIn ? (
           <GoogleLogin
             clientId="868193229049-r3rkp0lue3f4hk4g0d0c4h418d63mbmb.apps.googleusercontent.com"
             render={(renderProps) => (
@@ -92,7 +91,9 @@ function GoogleLog(props) {
 
             cookiePolicy={"single_host_origin"}
           />
-        )}
+        ):
+        (<div> <button>Play</button></div>)
+      }
       </div>
     </div>
 
