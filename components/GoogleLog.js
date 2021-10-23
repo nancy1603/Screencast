@@ -5,8 +5,6 @@ import Button from "@material-ui/core/Button";
 import { withStyles } from "@material-ui/core/styles";
 import { SocialMediaIconsReact } from 'social-media-icons-react';
 import Router from "next/router";
-import AnsAlert from "../components/AnsAlert"
-// import data from '../env.json';
 
 
 const useStyles = (theme) => ({

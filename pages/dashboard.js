@@ -47,14 +47,13 @@ function dashboard() {
          },
         })
         .then((response)=>{
-          console.log(response.status)
-          if(response.status === 401){
-            ApplicationUtil.ApplicationLogout();
-          }
           setUserlevel(response.data.current_question)
           if(response.data.quiz_finished){
             setQuizFinished(true);
           }
+        })
+        .catch(()=>{
+          ApplicationUtil.ApplicationLogout();
         })
         .then(() => {
          setloaded(true);

@@ -1,4 +1,4 @@
-const { Router } = require("next/router");
+import Router from "next/router";
 
 module.exports = {
     ApplicationLogout:function(){
