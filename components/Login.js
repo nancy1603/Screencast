@@ -29,12 +29,7 @@ export default function Login(props) {
         localStorage.setItem("end", end);
         localStorage.setItem("day", day);
 
-        if (localStorage.getItem('day') == 3 && (localStorage.getItem('end') < Date.now())) {
-         console.log("finale");
-          Router.push('/finale')
-        }
-        
-        else if (localStorage.getItem('email') && (localStorage.getItem('start') < Date.now()) && localStorage.getItem('end') > Date.now()) {
+        if (localStorage.getItem('email') && (localStorage.getItem('start') < Date.now()) && localStorage.getItem('end') > Date.now()) {
           console.log("game");
           Router.push('/dashboard')
         }

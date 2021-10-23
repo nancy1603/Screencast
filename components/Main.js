@@ -12,6 +12,8 @@ import Loader from "../components/Loader";
 import Rules from "./Rules";
 import Timer2 from "../components/Timer2"
 
+var ApplicationUtil = require("../utils/logout");
+
 export default function game(props) {
   
     
@@ -36,32 +38,23 @@ export default function game(props) {
         let temp2 = new Date(response.data.end_time);
         localStorage.setItem('end', temp2.getTime() + (temp2.getTimezoneOffset() * 60000))
         localStorage.setItem("start", temp3.getTime() + (temp3.getTimezoneOffset() * 60000));
-        let temp = localStorage.getItem('end') - Date.now();
         localStorage.setItem("day", response.data.current_day);
         setStartDate(temp3.getTime() + (temp3.getTimezoneOffset() * 60000));
-        
-
-         setDay(localStorage.getItem('day')) 
-         setEnd(localStorage.getItem('end'))
-          if (localStorage.getItem('day') == 3 && (localStorage.getItem('end') < Date.now())){
-            console.log("finale");
-            // Router.push('/dashboard')
-          }
+        setDay(localStorage.getItem('day')) 
+        setEnd(localStorage.getItem('end'))
             
-          if (localStorage.getItem("token") == null && localStorage.getItem("email") == null ) {
-            console.log("9");
-            AnsAlert(8)
+        if (localStorage.getItem("token") == null) {
+            console.log("Unauthorized user _ MAIN");
             Router.push('/');
-          }
-          else if (!(localStorage.getItem('start') <= Date.now())) {
+        }
+        else if (localStorage.getItem('start') >= Date.now()) {
             console.log("8");
             setQuizStarted(false);
             setLoaded(true);
-          }
-          else if (quizStarted){
+        }
+        else if (quizStarted){
             getQuestions();
           }
-        
         })
       .catch(err => {
         console.log(err)
@@ -99,6 +92,7 @@ export default function game(props) {
       })
       .catch(err => {
         console.log(err)
+        ApplicationUtil.ApplicationLogout();
         Router.push('/error')
       })
     
@@ -147,6 +141,9 @@ export default function game(props) {
           setAnswer("");
           AnsAlert(0);
         }
+      })
+      .catch(() => {
+        ApplicationUtil.ApplicationLogout();
       });
   };
 

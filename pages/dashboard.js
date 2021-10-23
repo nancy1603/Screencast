@@ -4,16 +4,12 @@ import Main from '../components/Main';
 import Login from '../components/Login';
 import Timeline from '../components/Timeline';
 import styles from '../styles/dashboard.module.css';
-import Router from "next/router";
 import axios from "axios";
 import FinishedPlaying from '../components/FinishedPlaying';
-import Footers from '../components/Footers';
 import DrawerLeft from "../components/DrawerLeft";
 import DrawerRight from "../components/DrawerRight";
 
 var ApplicationUtil = require("../utils/logout");
-
-
 
 function dashboard() {
     const [userlevel, setUserlevel]= useState("");
