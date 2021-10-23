@@ -22,7 +22,7 @@ function DrawerRight() {
         open={state}
         onClose={toggleDrawer(false)}>
             <div style={{backgroundColor:"black", height:"1000vh"}}>
-            <div className="flicker" onClick={toggleDrawer(false)} style={{color:"white", fontSize:"30px", display:"flex",position:"absolute",right:"45%",paddingBottom:"3%",paddingTop:"2%"}}><AiOutlineCloseCircle/></div>
+            <div className="flicker" onClick={toggleDrawer(false)} style={{color:"white", fontSize:"30px",display:"flex",alignItems:"center",justifyContent:"center",marginTop:"30px"}}><AiOutlineCloseCircle/></div>
             <LeadTable/>
             </div> 
             

@@ -29,9 +29,9 @@ const useStyles = (theme) => ({
       useEffect (() => {
     if (localStorage.getItem('day') == 3 && localStorage.getItem('end') < Date.now()) Router.push('/finale')
     else {
-      if (localStorage.getItem("email")) {
-        setIsUserLoggedIn({isUserLoggedIn:true} , () => {
-        })
+      if (localStorage.getItem("token")) {
+        
+        setIsUserLoggedIn(true);
       }
     }
   },[]);
