@@ -6,6 +6,7 @@ import Router from "next/router";
 import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Loader from "../components/Loader.js"
+import theme from "../components/Theme";
 
 function MyApp(props) {
   const[loaded,setLoaded]=useState(false);
@@ -42,7 +43,7 @@ function MyApp(props) {
           <title>Geektober</title>
           <link rel="stylesheet" type="text/css" href="question.css" />
         </Head>
-        <ThemeProvider>
+        <ThemeProvider theme={theme}>
           <div className="back">
           <CssBaseline />
           {loaded ? (
