@@ -1,5 +1,4 @@
 
-
 import axios from "axios";
 import React from "react";
 import { useState, useEffect } from "react";
@@ -8,18 +7,10 @@ import Hint from "../components/Hint";
 import AnsAlert from "../components/AnsAlert";
 import Answer from "../components/Answer";
 import Router from "next/router";
-// import data from '../env.json';
 import Layout from "../components/Layout";
 import Loader from "../components/Loader";
-import { GoogleLogout } from "react-google-login";
-// import Router from "next/router";
-import Link from "next/link";
-import MenuItem from "@material-ui/core/MenuItem";
-import { Typography } from "@material-ui/core";
 import Rules from "./Rules";
 import Timer2 from "../components/Timer2"
-
- import Footer from "./Footer";
 
 export default function game(props) {
   
@@ -29,23 +20,16 @@ export default function game(props) {
       [qsNo,setQsNo]=useState(1),
       [audio,setAudio]=useState(""),
       [image,setImage]=useState(""),
-      [isLoggedIn,setIsLoggedIn]=useState (false),
       [hint,setHint]=useState(""),
       [day,setDay]=useState(""),
       [end,setEnd]=useState(""),
-      [message,setMessage]=useState(""),
-      [v,setV]=useState(""),
       [loaded,setLoaded]=useState(false)
-      const [isSignedIn, setIsSigned] = useState(false);
-      const [quizFinished, setQuizFinished]= useState(false);
       const [quizStarted,setQuizStarted]=useState(true);
       const [startdate,setStartDate]=useState();
       
 
-  
-
       useEffect (() => {
-    axios
+      axios
       .get(process.env.api + "/api/status")
       .then((response) => {
         var temp3 = new Date(response.data.start_time);
@@ -55,7 +39,6 @@ export default function game(props) {
         let temp = localStorage.getItem('end') - Date.now();
         localStorage.setItem("day", response.data.current_day);
         setStartDate(temp3.getTime() + (temp3.getTimezoneOffset() * 60000));
-
         
 
          setDay(localStorage.getItem('day')) 
@@ -65,7 +48,7 @@ export default function game(props) {
             // Router.push('/dashboard')
           }
             
-          if (!(localStorage.getItem("email"))) {
+          if (localStorage.getItem("token") == null && localStorage.getItem("email") == null ) {
             console.log("9");
             AnsAlert(8)
             Router.push('/');
@@ -74,10 +57,8 @@ export default function game(props) {
             console.log("8");
             setQuizStarted(false);
             setLoaded(true);
-            // AnsAlert(8)
-            // Router.push("/");
           }
-          else {
+          else if (quizStarted){
             getQuestions();
           }
         
@@ -129,11 +110,7 @@ export default function game(props) {
     checkAns(answer);
     setAnswer("")
   };
-  // submit2 = () => {
-  //   //send final answer for checking
-  //   console.log(this.state.answer);
-  //   this.checkAns(this.state.answer);
-  // };
+
 
   const change = (event) => {
     //keep updating answer

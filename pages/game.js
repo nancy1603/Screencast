@@ -29,15 +29,8 @@ export default function game() {
       [loaded,setLoaded]=useState(false)
     
 
-    // this.submit = this.submit.bind(this);
-    // this.submit2 = this.submit2.bind(this);
-    // this.change = this.change.bind(this);
-    // this.checkAns = this.checkAns.bind(this);
-    // this.getQuestions = this.getQuestions.bind(this);
-
-
       useEffect (() => {
-    axios
+      axios
       .get(process.env.api + "/api/status")
       .then((response) => {
         var temp3 = new Date(response.data.start_time);
@@ -47,20 +40,6 @@ export default function game() {
         let temp = localStorage.getItem('end') - Date.now();
         localStorage.setItem("day", response.data.current_day);
 
-        // setV(setTimeout(function () {
-        //     AnsAlert(9);
-        //     if (localStorage.getItem('day') === 3) {
-
-        //       Router.push('/finale')
-        //     }
-        //     else if(response.data.error){
-        //       Router.push('/error')
-        //     }
-        //     else {
-        //       Router.push('/finale');
-        //     }
-        //   }, temp)
-        // )
 
          setDay(localStorage.getItem('day')) 
          setEnd(localStorage.getItem('end'))
@@ -130,11 +109,6 @@ export default function game() {
     checkAns(answer);
     setAnswer("")
   };
-  // submit2 = () => {
-  //   //send final answer for checking
-  //   console.log(this.state.answer);
-  //   this.checkAns(this.state.answer);
-  // };
 
   const change = (event) => {
     //keep updating answer
@@ -192,7 +166,6 @@ export default function game() {
                 />
                 <Hint hint={hint}
                   submit={submit}
-                // submit2={this.submit2}
                 />
                 <style jsx>{`
             div {
