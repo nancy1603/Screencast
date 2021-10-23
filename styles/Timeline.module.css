@@ -76,12 +76,24 @@
         color: white;
         
     }
+    @media only screen and (max-width: 1230px) {
+        .log{
+            position: sticky;
+            bottom:0;
+            background-color: rgb(0, 0, 0);
+            height:5%;
+            width:100%;
+    
+        }
+    }
     .log{
         position: sticky;
-    bottom: 0;
+        bottom:0;
+        height:5%;
+        width:100%;
+
     }
     .wrapper{
-        
         display:flex; 
         margin:0 auto;
         /*padding: 10px;*/

@@ -431,14 +431,14 @@ body::-webkit-scrollbar {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    
+        /* overflow: scroll; */
 }
 .containerfigure {
     display: block;
     padding: 15px;
     align-content: center;
     margin: 0 auto;
-    /* overflow: auto; */
+    overflow: auto;
     
 }
 .containerfigure::-webkit-scrollbar {

@@ -5,6 +5,7 @@ import Button from "@material-ui/core/Button";
 import { withStyles } from "@material-ui/core/styles";
 import { SocialMediaIconsReact } from 'social-media-icons-react';
 import Router from "next/router";
+import Link from "next/link";
 
 const useStyles = (theme) => ({
   root: {
@@ -92,7 +93,11 @@ function GoogleLog(props) {
             cookiePolicy={"single_host_origin"}
           />
         ):
-        (<div> <button>Play</button></div>)
+        (<div> 
+          <Link href="/dashboard">
+          <Button style={{backgroundColor: "#4dcfe0", padding: "0" , width:"10px",color:"black",height: "40px", width: "100px", borderRadius: "15px"}}>Play</Button>
+          </Link>
+          </div>)
       }
       </div>
     </div>
