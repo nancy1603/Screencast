@@ -127,3 +127,12 @@ align-items: center;
           border-radius: 40px;
     }
 }
+
+@media only screen and (max-width: 710px) {
+    .tile{
+        display:flex;
+       flex-direction: column;
+
+    } 
+    
+}
