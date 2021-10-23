@@ -50,12 +50,7 @@ overflow: scroll;
 .TimelineContainer{
     align-content:center;
     width:566px;
-    /* height:1022px; */
-    /*height:calc(100vh - 80px);*/
     left: 25px;
-    /* top:28px; */
-    /* background-color: white 0%; */
-    /* margin:15px; */
     padding:10px;
     overflow-y: scroll;
     

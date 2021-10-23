@@ -1,5 +1,4 @@
 
-
 import axios from "axios";
 import React from "react";
 import { useState, useEffect } from "react";
@@ -8,18 +7,12 @@ import Hint from "../components/Hint";
 import AnsAlert from "../components/AnsAlert";
 import Answer from "../components/Answer";
 import Router from "next/router";
-// import data from '../env.json';
 import Layout from "../components/Layout";
 import Loader from "../components/Loader";
-import { GoogleLogout } from "react-google-login";
-// import Router from "next/router";
-import Link from "next/link";
-import MenuItem from "@material-ui/core/MenuItem";
-import { Typography } from "@material-ui/core";
 import Rules from "./Rules";
 import Timer2 from "../components/Timer2"
 
- import Footer from "./Footer";
+var ApplicationUtil = require("../utils/logout");
 
 export default function game(props) {
   
@@ -29,58 +22,39 @@ export default function game(props) {
       [qsNo,setQsNo]=useState(1),
       [audio,setAudio]=useState(""),
       [image,setImage]=useState(""),
-      [isLoggedIn,setIsLoggedIn]=useState (false),
       [hint,setHint]=useState(""),
       [day,setDay]=useState(""),
       [end,setEnd]=useState(""),
-      [message,setMessage]=useState(""),
-      [v,setV]=useState(""),
       [loaded,setLoaded]=useState(false)
-      const [isSignedIn, setIsSigned] = useState(false);
-      const [quizFinished, setQuizFinished]= useState(false);
       const [quizStarted,setQuizStarted]=useState(true);
       const [startdate,setStartDate]=useState();
       
 
-  
-
       useEffect (() => {
-    axios
+      axios
       .get(process.env.api + "/api/status")
       .then((response) => {
         var temp3 = new Date(response.data.start_time);
         let temp2 = new Date(response.data.end_time);
         localStorage.setItem('end', temp2.getTime() + (temp2.getTimezoneOffset() * 60000))
         localStorage.setItem("start", temp3.getTime() + (temp3.getTimezoneOffset() * 60000));
-        let temp = localStorage.getItem('end') - Date.now();
         localStorage.setItem("day", response.data.current_day);
         setStartDate(temp3.getTime() + (temp3.getTimezoneOffset() * 60000));
-
-        
-
-         setDay(localStorage.getItem('day')) 
-         setEnd(localStorage.getItem('end'))
-          if (localStorage.getItem('day') == 3 && (localStorage.getItem('end') < Date.now())){
-            console.log("finale");
-            // Router.push('/dashboard')
-          }
+        setDay(localStorage.getItem('day')) 
+        setEnd(localStorage.getItem('end'))
             
-          if (!(localStorage.getItem("email"))) {
-            console.log("9");
-            AnsAlert(8)
+        if (localStorage.getItem("token") == null) {
+            console.log("Unauthorized user _ MAIN");
             Router.push('/');
-          }
-          else if (!(localStorage.getItem('start') <= Date.now())) {
+        }
+        else if (localStorage.getItem('start') >= Date.now()) {
             console.log("8");
             setQuizStarted(false);
             setLoaded(true);
-            // AnsAlert(8)
-            // Router.push("/");
-          }
-          else {
+        }
+        else if (quizStarted){
             getQuestions();
           }
-        
         })
       .catch(err => {
         console.log(err)
@@ -118,6 +92,7 @@ export default function game(props) {
       })
       .catch(err => {
         console.log(err)
+        ApplicationUtil.ApplicationLogout();
         Router.push('/error')
       })
     
@@ -129,11 +104,7 @@ export default function game(props) {
     checkAns(answer);
     setAnswer("")
   };
-  // submit2 = () => {
-  //   //send final answer for checking
-  //   console.log(this.state.answer);
-  //   this.checkAns(this.state.answer);
-  // };
+
 
   const change = (event) => {
     //keep updating answer
@@ -170,6 +141,9 @@ export default function game(props) {
           setAnswer("");
           AnsAlert(0);
         }
+      })
+      .catch(() => {
+        ApplicationUtil.ApplicationLogout();
       });
   };
 

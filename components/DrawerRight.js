@@ -14,15 +14,15 @@ function DrawerRight() {
     return (
         <>
         <Button onClick={toggleDrawer(true)}
-        className="flicker"
-        style={{color:"#4dcfe0", fontSize:"18px", fontWeight:"bold"}}>LEADERBOARD</Button>
+        //className="flicker"
+        style={{fontSize:"18px", fontWeight:"bold"}}> <a><img src="/leaderboard.png" style={{ width: "20px" }}/></a></Button>
         <Drawer
         anchor={'right'}
         width={'100%'}
         open={state}
         onClose={toggleDrawer(false)}>
             <div style={{backgroundColor:"black", height:"1000vh"}}>
-            <div className="flicker" onClick={toggleDrawer(false)} style={{color:"white", fontSize:"30px", display:"flex",position:"absolute",right:"10%"}}><AiOutlineCloseCircle/></div>
+            <div className="flicker" onClick={toggleDrawer(false)} style={{color:"white", fontSize:"30px",display:"flex",alignItems:"center",justifyContent:"center",marginTop:"30px"}}><AiOutlineCloseCircle/></div>
             <LeadTable/>
             </div> 
             

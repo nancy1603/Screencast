@@ -4,14 +4,12 @@ import Main from '../components/Main';
 import Login from '../components/Login';
 import Timeline from '../components/Timeline';
 import styles from '../styles/dashboard.module.css';
-import Router from "next/router";
 import axios from "axios";
 import FinishedPlaying from '../components/FinishedPlaying';
-import Footers from '../components/Footers';
 import DrawerLeft from "../components/DrawerLeft";
 import DrawerRight from "../components/DrawerRight";
 
-
+var ApplicationUtil = require("../utils/logout");
 
 function dashboard() {
     const [userlevel, setUserlevel]= useState("");
@@ -23,7 +21,7 @@ function dashboard() {
     const checkLogin = ()=>{
       if(localStorage.getItem('token') === null ){
         setIsLoggedin(false)
-        console.log("1");
+        console.log("Unauthorised - at dashboard");
         
       }else{
           setIsLoggedin(true)
@@ -34,9 +32,9 @@ function dashboard() {
         .then((response)=>{
          setLevel(response.data.round_questions)
          let temp2 = new Date(response.data.end_time).getTime() + new Date(response.data.end_time).getTimezoneOffset() * 60000;
-        if(temp2 < Date.now()){
+         if(temp2 < Date.now()){
           setQuizFinished(true);
-        }
+         }
         })
         axios
         .get(process.env.api + "/api/timeline",{
@@ -49,6 +47,9 @@ function dashboard() {
           if(response.data.quiz_finished){
             setQuizFinished(true);
           }
+        })
+        .catch(()=>{
+          ApplicationUtil.ApplicationLogout();
         })
         .then(() => {
          setloaded(true);
@@ -78,34 +79,17 @@ function dashboard() {
          },
         })
         .then((response)=>{
+          if(response.status === 401){
+            ApplicationUtil.ApplicationLogout();
+          }
           setUserlevel(response.data.current_question)
         })
         
     }
     useEffect(()=>{
-
       checkLogin();
-
       
-      // console.log("dashboard");
-      //   axios
-      //   .get(process.env.api + "/api/status")
-      //   .then((response)=>{
-      //    setLevel(response.data.round_questions)
-      //   })
-      //   axios
-      //   .get(process.env.api + "/api/timeline",{
-      //    headers: {
-      //      Authorization: "Bearer " + localStorage.getItem("token"),
-      //    },
-      //   })
-      //   .then((response)=>{
-      //     setUserlevel(response.data.current_question)
-      //   })
-      //   .then(() => {
-      //    setloaded(true);
-      //  }); 
-       },[]);
+     },[]);
    return (
         
         <div className={styles.Container}>

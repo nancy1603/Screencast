@@ -26,7 +26,7 @@
         display: block;
         padding: 10px;
         margin:10px auto;
-        width: 160px;
+        width: 200px;
         min-width:100px;
         height: 45px;
         left: 174px;
@@ -47,7 +47,7 @@
     /* position: absolute; */
     position: relative;
     
-    width: 103px;
+    width: 143px;
     height: 30px;
     left: 15px;
     font-family: Bruno Ace;
@@ -76,12 +76,16 @@
         color: white;
         
     }
+    .log{
+        position: sticky;
+    bottom: 0;
+    }
     .wrapper{
         
         display:flex; 
         margin:0 auto;
-        padding: 15px;
-        width:50%;
+        /*padding: 10px;*/
+        width:45%;
         justify-content: space-between;
         align-items: center;
     }
