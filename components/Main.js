@@ -72,8 +72,8 @@ export default function game(props) {
       })
       .then((response) => {
         if (response.data.quiz_finished) {
-          clearTimeout(v);
-          setQuizFinished(true);
+          clearTimeout();
+          
           // Router.push("/dashboard");
         }
         
@@ -135,14 +135,15 @@ export default function game(props) {
         } 
         else if (r && response.data.quiz_finished) {
           AnsAlert(1);
-          clearTimeout(v);
+          clearTimeout();
           Router.push("/dashboard");
         } else {
           setAnswer("");
           AnsAlert(0);
         }
       })
-      .catch(() => {
+      .catch((error) => {
+        console.log("error");
         ApplicationUtil.ApplicationLogout();
       });
   };
