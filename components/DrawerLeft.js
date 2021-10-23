@@ -13,7 +13,7 @@ function DrawerLeft(props) {
         <>
         <Button onClick={toggleDrawer(true)}
         className="flicker"
-        style={{color:"#4dcfe0", fontSize:"18px", fontWeight:"bold"}}>TIMELINE</Button>
+        style={{color:"#4dcfe0", fontSize:"18px", fontWeight:"bold"}}> <a><img src="/levels.png" style={{ width: "20px"}}/></a></Button>
         <Drawer
         anchor={'left'}
         width={'100%'}
