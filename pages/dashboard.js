@@ -100,7 +100,7 @@ function dashboard() {
               <div className="head">
           <div className="container neon-box" style={{
             textAlign: "center",
-            fontSize: "25px",
+            fontSize: "30px",
             fontFamily: "'Russo One', sans-serif",
             // color:"white"
           }}>
@@ -127,7 +127,7 @@ function dashboard() {
                 <div className="container neon-box"
               style={{
                 textAlign: "center",
-                fontSize: "25px",
+                fontSize: "40px",
                 fontFamily: "'Russo One', sans-serif",
               }}>
               <span className="flicker">SCREENCAST</span>

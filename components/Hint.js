@@ -110,7 +110,7 @@ export default function SimplePopover(props) {
         color="primary"
         elevation={3}
         onClick={props.submit}
-        style={{ backgroundColor:"#4dcfe0",
+        style={{ backgroundColor:"#b14de0",
         color:"black",
         // border: "0px solid white", 
         height: "40px", width: "100px", 
@@ -118,7 +118,7 @@ export default function SimplePopover(props) {
         // borderBottomLeftRadius: "16px" 
         // background: "linear-gradient(112.76deg, rgba(255, 255, 255, 0.02) 7.77%, rgba(255, 255, 255, 0.005) 87.65%)",
         //   backdropFilter: "blur(100px)",
-          borderRadius: "15px",
+          borderRadius: "45px",
       }}
       >
         Submit
@@ -133,17 +133,17 @@ export default function SimplePopover(props) {
         onClick={handleClick}
         style={{ 
           backgroundColor: "#ff2483", 
-          border: "3px solid #00bae", 
+          border: "2px solid #b14de0", 
           color:"#00bae",
           height: "40px", width: "100px", 
           // borderTopLeftRadius: "16px", 
           // borderBottomRightRadius: "16px" ,
           background: "linear-gradient(112.76deg, rgba(255, 255, 255, 0.02) 7.77%, rgba(255, 255, 255, 0.005) 87.65%)",
           backdropFilter: "blur(100px)",
-          border: "4px solid #4dcfe0",
+          border: "2px solid #b14de0",
           /* Note: backdrop-filter has minimal browser support */
           
-          borderRadius: "15px",}}
+          borderRadius: "45px",}}
       >
         Hint
       </Button>

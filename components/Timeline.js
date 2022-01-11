@@ -63,7 +63,7 @@ function Timeline(props) {
           className="container neon-box"
           style={{
             textAlign: "center",
-            fontSize: "25px",
+            fontSize: "30px",
             fontFamily: "'Russo One', sans-serif",
             // color:"white"
           }}
@@ -124,8 +124,8 @@ function Timeline(props) {
                         <Button
                           onClick={logout}
                           style={{
-                            backgroundColor: "#4dcfe0",
-                            borderRadius: "15px",
+                            backgroundColor: "#c0a5ea",
+                            borderRadius: "45px",
                             height: "40px",
                             width: "100px",
                           }}

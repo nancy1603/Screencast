@@ -13,7 +13,7 @@
     box-shadow: 0px 4px 24px -2px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(100px);
     /* Note: backdrop-filter has minimal browser support */
-    border: 3px solid #00c6e9;
+    border: 3px solid #a700e9;
     
     -webkit-border-image-source: linear-gradient(109.43deg, rgba(97, 236, 153, 0.83) 2.44%, #1FF190 29.18%, #21FFD5 67.03%, rgba(1, 247, 203, 0.72) 99.32%);
     
@@ -69,7 +69,7 @@
         font-size: 20px;
         line-height: 22px;
         text-align: center;
-        color: rgb(69, 231, 231);
+        color: rgb(252, 247, 255);
 
     }
     .ava{

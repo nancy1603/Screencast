@@ -11,7 +11,7 @@ export default function leaderboard() {
             className="container neon-box"
             style={{
               textAlign: "center",
-              fontSize: "25px",
+              fontSize: "30px",
               fontFamily: "'Russo One', sans-serif",
             }}
           >

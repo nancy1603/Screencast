@@ -14,7 +14,7 @@ function FinishedPlaying(props) {
                   <div className="container neon-box"
                 style={{
                   textAlign: "center",
-                  fontSize: "25px",
+                  fontSize: "40px",
                   fontFamily: "'Russo One', sans-serif",
                 }}>
                 <span className="flicker">SCREENCAST</span>

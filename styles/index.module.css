@@ -38,7 +38,7 @@
     margin: auto auto;
     border-radius: 30px;
     background: rgba(29, 11, 63, 0.493);
-    border: 2px solid #b4aeb9ce;
+    /* border: 2px solid #b4aeb9ce; */
     backdrop-filter: blur(15px);
     position: relative;
     overflow: scroll;
@@ -134,22 +134,25 @@
     display: inline-block;
     color: #000000;
     text-decoration: none;
+    justify-content:space-around;
     text-transform: uppercase;
     /* background: linear-gradient(99.4deg, #750b95 14.06%, #7EEAF1 87.56%); */
-    padding: 12px 12px;
-    border-radius: 25px;
+    padding: 15px 15px 15px 15px;
+    padding-bottom: 15px;
+    border-radius: 45px;
     text-align: center;
     margin-right: 30px;
-    font-size: 40;
-    font-weight: 900;
-    width: 90px;
+    font-size: 14px;
+    font-weight: 450;
+    width: 100px;
+    height: 40px;
     cursor: pointer;
     border: 2px solid transparent;
     background: rgba(2, 52, 58, 0.3);
     backdrop-filter: blur(5px);
     /*color: #6ec4f5;*/
-    color: rgb(135, 194, 250);
-    border: 3px solid rgb(135, 194, 250);
+    color: rgb(251, 255, 255);
+    border: 2px solid #b14de0;
   }
   
   .btn:hover,

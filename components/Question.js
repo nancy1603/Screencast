@@ -50,7 +50,7 @@ export default function Question(props) {
           className="container neon-box"
           style={{
             textAlign: "center",
-            fontSize: "25px",
+            fontSize: "40px",
             fontFamily: "'Russo One', sans-serif",
           }}
         >
@@ -61,7 +61,7 @@ export default function Question(props) {
       <div className="Nstick">
       <Typography
           className={classes.title}
-          style={{ fontFamily: "'Montserrat', sans-serif",color:"#fff"}}
+          style={{ fontFamily: "'Montserrat', sans-serif",color:"#fff",fontSize:"25px"}}
           
           gutterBottom
         >
