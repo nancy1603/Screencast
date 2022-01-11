@@ -15,7 +15,7 @@
 }
 .dashboard {
     
-    background-image: url('../public/scbg3.jpg');
+    background-image: url('../public/scbg4.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -37,9 +37,9 @@
     height: calc(100vh - 90px);
     margin: auto auto;
     border-radius: 30px;
-    background: rgba(10, 3, 32, 0.493);
+    background: rgba(29, 11, 63, 0.493);
     border: 2px solid #b4aeb9ce;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     position: relative;
     overflow: scroll;
     
@@ -83,11 +83,12 @@
   .logo {
     font-size: 85px;
     font-weight: bold;
-    color: #4dcfe0;
+    color: #04cbfd;
   }
   
   .logo span {
-    color: #b5fbff;
+    color: #c077fb;
+    
   }
   
   /*ul {
@@ -119,7 +120,7 @@
   .innercontent {
     flex-basis: 40%;
     padding-left: 5%;
-    color: aliceblue;
+    color: rgb(135, 194, 250);
     flex-wrap: wrap;
   }
   .login{
@@ -131,8 +132,8 @@
       padding-right: 5%;
       padding: 10px 50px;
       height: 90%;
-      background: rgba(42, 60, 119, 0.356);
-      backdrop-filter: blur(1px);
+      /* background: rgba(42, 60, 119, 0); */
+      /* backdrop-filter: blur(1px); */
       border-radius: 40px;
       /*position: relative;*/
       
@@ -166,7 +167,7 @@
   }
   
   .innercontent p {
-    color: #959595;
+    color: #c7edee;
     margin-bottom: 40px;
     padding-top: 5%;
     font-size: 25px;
@@ -179,7 +180,7 @@
     color: #000000;
     text-decoration: none;
     text-transform: uppercase;
-    background: linear-gradient(99.4deg, #0B8C95 14.06%, #7EEAF1 87.56%);
+    /* background: linear-gradient(99.4deg, #750b95 14.06%, #7EEAF1 87.56%); */
     padding: 12px 12px;
     border-radius: 30px;
     text-align: center;
@@ -191,8 +192,8 @@
     border: 2px solid transparent;
     background: rgba(2, 52, 58, 0.3);
     backdrop-filter: blur(5px);
-    color: #7EEAF1;
-    border: 3px solid #7eeaf1;
+    color: #6ec4f5;
+    border: 3px solid  #bd7ef1;
   }
   
   .btn:hover,

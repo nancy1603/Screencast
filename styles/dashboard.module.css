@@ -17,7 +17,7 @@
     /* border: 4px solid #4dcfe0;
     border-radius: 30px;  */
 
-    background-image: url('../public/scbg3.jpg');
+    background-image: url('../public/scbg4.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -37,9 +37,9 @@ width: 90%;
 margin: auto;
 height: calc(100vh - 70px);
 border-radius: 30px;
-background: rgba(2, 52, 58, 0.3);
-border: 4px solid #4dcfe0;
-backdrop-filter: blur(5px);
+background: rgba(29, 11, 63, 0.493);
+    border: 2px solid #b4aeb9ce;
+    backdrop-filter: blur(15px);
 position: relative;
 overflow: scroll;
 /* top:0px; */
