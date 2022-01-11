@@ -50,13 +50,13 @@ const StyledTableRow = withStyles((theme) => ({
     },
     "&:nth-of-type(odd)": {
       //backgroundColor: "#1b0045 !important",
-      background:"linear-gradient(112.76deg, rgba(255, 255, 255, 0.04) 7.77%, rgba(255, 255, 255, 0.01) 87.65%) !important",
+      background:"linear-gradient(112.76deg, rgba(255, 255, 255, 0.09) 7.77%, rgba(255, 255, 255, 0.1) 87.65%) !important",
       color: "#000 !important"
     },
     "&:nth-of-type(even)": {
       //backgroundColor: "#1b0045 !important",
 
-      background:"linear-gradient(112.76deg, rgba(255, 255, 255, 0.04) 7.77%, rgba(255, 255, 255, 0.01) 87.65%) !important",
+      background:"linear-gradient(112.76deg, rgba(255, 255, 255, 0.09) 7.77%, rgba(255, 255, 255, 0.1) 87.65%) !important",
       color: "white !important",
     },
   },

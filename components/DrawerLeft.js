@@ -21,7 +21,7 @@ function DrawerLeft(props) {
         onClose={toggleDrawer(false)}>
             <div 
             onClick={toggleDrawer(false)}
-            style={{backgroundColor:"black", height:"1000vh", minWidth:"40vh"}}>
+            style={{backgroundColor:"#1b0045", height:"1000vh", minWidth:"40vh"}}>
             {props.isLoggedin ? (<Timeline level={props.level} userlevel={props.userlevel} loaded={props.loaded}/>
             ):(
                 <><div className="head">
