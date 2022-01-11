@@ -24,10 +24,10 @@ function index() {
        
       <div className={styles.buttons}>
       <Rules />
-      <Link href='/dashboard'>
-      <a className={styles.btns}>Explore</a>
+      <Link href='/leaderboard'>
+      <a className={styles.btns}>leaderboard</a>
       </Link>
-      </div>
+    </div>
       
     </div>
          <Login/>
