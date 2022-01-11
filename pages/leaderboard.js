@@ -11,7 +11,7 @@ export default function leaderboard() {
     <div className={styles.dashboard}> 
   <div className={styles.glasscontainer}>
         <div style={{paddingTop:"20px",paddingLeft:"20px"}}>
-        <Link href='/'><a className={styles.btn} style={{border:"hidden"}}>Back</a></Link>
+        <Link href='/'><a className={styles.btns} style={{border:"hidden"}}>Back</a></Link>
         </div>
       <div style={{ textAlign: "center" }}>
         <div className="head">

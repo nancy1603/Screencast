@@ -39,9 +39,10 @@ export default function Rules() {
         style={{ 
           backgroundColor: "#ff2483", 
           border: "2px solid #b14de0", 
-          color:"#00bae",
+          color:"#b14de0",
           height: "40px", width: "100px", 
           marginRight: "30px",
+          fontWeight:"900",
           // borderTopLeftRadius: "16px", 
           // borderBottomRightRadius: "16px" ,
           background: "linear-gradient(112.76deg, rgba(255, 255, 255, 0.02) 7.77%, rgba(255, 255, 255, 0.005) 87.65%)",

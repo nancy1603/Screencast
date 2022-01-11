@@ -130,38 +130,28 @@
     font-family: 'Barlow', sans-serif;
   }
   
-  .btn {
-    display: inline-block;
-    color: #000000;
-    text-decoration: none;
-    justify-content:space-around;
-    text-transform: uppercase;
-    /* background: linear-gradient(99.4deg, #750b95 14.06%, #7EEAF1 87.56%); */
-    padding: 15px 15px 15px 15px;
-    padding-bottom: 15px;
-    border-radius: 45px;
-    text-align: center;
-    margin-right: 30px;
-    font-size: 14px;
-    font-weight: 450;
-    width: 100px;
-    height: 40px;
-    cursor: pointer;
-    border: 2px solid transparent;
-    background: rgba(2, 52, 58, 0.3);
-    backdrop-filter: blur(5px);
-    /*color: #6ec4f5;*/
-    color: rgb(251, 255, 255);
-    border: 2px solid #b14de0;
+ .btn {
+          
+          color: #b14de0;
+          text-decoration: none;
+          text-transform: uppercase;
+          
+          justify-content: center;
+          border-radius: 45px;
+          align-items: center;
+          text-align: center;
+          margin-right: 30px;
+          font-size: 40;
+          font-weight: 900;
+          width: 140px;
+          cursor: pointer;
+          padding: 9px 10px;
+          width:140px;
+          backdrop-filter: blur(100px);
+          
+          border: 2px solid #b14de0;
   }
   
-  .btn:hover,
-  .btn:focus {
-    
-    background: rgba(2, 52, 58, 0.3);
-    backdrop-filter: blur(5px);
-    
-  }
   .btns {
     display: inline-block;
     color: #000000;
@@ -213,13 +203,8 @@
     .innercontent p{
       padding-top: 3%;
     }
-    /*.login{
-      
-      flex-basis: 40%;
-      
-      
-    }
-    .imgg{
+  
+    /*.imgg{
       width: 100%;
       left: 50%;
     }*/

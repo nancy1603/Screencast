@@ -2,15 +2,26 @@ import React from 'react'
 import { Button } from '@material-ui/core';
 import { Drawer } from '@material-ui/core';
 import LeadTable from './LeadTable';
+import { makeStyles } from "@material-ui/core/styles";
  
 import { AiOutlineCloseCircle } from "react-icons/ai";
 // import HighlightOffSharpIcon from '@mui/icons-material/HighlightOffSharp';
+const useStyles = makeStyles({
+    paper: {
+      background:'linear-gradient(112.76deg, rgba(255, 255, 255, 0.04) 7.77%, rgba(255, 255, 255, 0.01) 87.65%) !important',
+      //background: 'red'
+      //background:'rgba(255,255,255,0.03)',
+      backdropFilter: 'blur(10px)',
 
+    }
+   });
 function DrawerRight() {
     const [state,setState]= React.useState(false)
     const toggleDrawer=(open) => (event) => {
         setState(open)
     }
+
+    const styles = useStyles();
     return (
         <>
         <Button onClick={toggleDrawer(true)}
@@ -20,8 +31,9 @@ function DrawerRight() {
         anchor={'right'}
         width={'100%'}
         open={state}
+        classes={{ paper: styles.paper }}
         onClose={toggleDrawer(false)}>
-            <div style={{ backgroundColor: "#1b0045", height:"1000vh"}}>
+            <div style={{ height:"1000vh"}}>
             <div className="flicker" onClick={toggleDrawer(false)} style={{color:"white", fontSize:"30px",display:"flex",alignItems:"center",justifyContent:"center",marginTop:"30px"}}><AiOutlineCloseCircle/></div>
             <LeadTable/>
             </div> 
