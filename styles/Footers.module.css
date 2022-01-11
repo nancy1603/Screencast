@@ -9,7 +9,8 @@
 
 .icons{
     font-size: 3px;
-    color: rgb(174, 202, 226);
+    /*color: rgb(174, 202, 226);*/
+    color: #dccffa;
     margin-right: 15px;
     width: 20px;
     height: 20px;

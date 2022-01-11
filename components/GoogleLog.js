@@ -83,7 +83,7 @@ function GoogleLog(props) {
                   onClick={renderProps.onClick}
 
                 >
-                  <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="4" borderStyle="inset" icon="googleplus" iconColor="rgba(0,0,0,1)" backgroundColor="rgba(21, 234, 248, 1)" iconSize="7" roundness="50%" size="53" />
+                  <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="4" borderStyle="inset" icon="googleplus" iconColor="rgba(0,0,0,1)" backgroundColor="rgb(135, 194, 250)" iconSize="7" roundness="50%" size="53" />
                 </Button>
               </div>
             )}
@@ -95,7 +95,7 @@ function GoogleLog(props) {
         ):
         (<div> 
           <Link href="/dashboard">
-          <Button style={{backgroundColor: "#4dcfe0", padding: "0" , width:"10px",color:"black",height: "40px", width: "100px", borderRadius: "15px", fontWeight:"bold"}}>PLAY</Button>
+          <Button style={{backgroundColor: "#dccffa", padding: "0" , width:"10px",color:"black",height: "40px", width: "100px", borderRadius: "15px", fontWeight:"bold"}}>PLAY</Button>
           </Link>
           </div>)
       }

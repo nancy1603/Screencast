@@ -37,24 +37,26 @@ const StyledTableCell = withStyles((theme) => ({
 const StyledTableRow = withStyles((theme) => ({
   root: {
     "&:nth-of-type(1)": {
-      backgroundColor: "#064244 !important",
+       backgroundColor: "#1b0045 !important",
       color: "#000 !important",
-      // backdropFilter: "blur(2px) !important"
     },
     "&:nth-of-type(2)": {
-      backgroundColor: "#064244 !important",
+      backgroundColor: "#1b0045 !important",
       color: "#000 !important"
     },
     "&:nth-of-type(3)": {
-      backgroundColor: "#064244 !important",
+      backgroundColor: "#1b0045 !important",
       color: "#000 !important"
     },
     "&:nth-of-type(odd)": {
-      backgroundColor: "#064244",
+      //backgroundColor: "#1b0045 !important",
+      background:"linear-gradient(112.76deg, rgba(255, 255, 255, 0.04) 7.77%, rgba(255, 255, 255, 0.01) 87.65%) !important",
       color: "#000 !important"
     },
     "&:nth-of-type(even)": {
-      backgroundColor: "#064244",
+      //backgroundColor: "#1b0045 !important",
+
+      background:"linear-gradient(112.76deg, rgba(255, 255, 255, 0.04) 7.77%, rgba(255, 255, 255, 0.01) 87.65%) !important",
       color: "white !important",
     },
   },
@@ -67,7 +69,6 @@ const useStyles = makeStyles({
     minWidth:"100px",
     width:"90%",
     overflowX: "hidden",
-    
   },
 });
 

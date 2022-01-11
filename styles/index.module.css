@@ -45,33 +45,6 @@
     
    }
   
-  /*.bg-1, .bg-2 {
-    width: 300px;
-    height: 300px;
-    background-image: linear-gradient( 
-                   112deg, 
-                 rgba(169,28,115,1) 21%,
-                rgb(241, 92, 11) 93% );
-    
-    position: absolute;
-    z-index: 1;
-  }
-  
-  .bg-1 {
-    top: 7%;
-    left: 5.5%;
-    border-radius: 20px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 200px;
-    border-bottom-left-radius: 50px;
-  }
-  
-  .bg-2 {
-    bottom: 7%;
-    right: 5.5%;
-    border-radius: 50%;
-  }*/
-  
   .nave {
     display: flex;
     justify-content: center;
@@ -91,25 +64,7 @@
     
   }
   
-  /*ul {
-    list-style: none;
-    display: flex;
-  }
   
-  ul li a {
-    color: #cecece;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin-right: 20px;
-    letter-spacing: 1;
-    transition: all .2s;
-  }
-  
-  ul li a:hover, .active {
-    color: #d42d65;
-  }*/
-
   .main {
     display: flex;
     justify-content: space-around;
@@ -182,18 +137,19 @@
     text-transform: uppercase;
     /* background: linear-gradient(99.4deg, #750b95 14.06%, #7EEAF1 87.56%); */
     padding: 12px 12px;
-    border-radius: 30px;
+    border-radius: 25px;
     text-align: center;
     margin-right: 30px;
     font-size: 40;
     font-weight: 900;
-    width: 100px;
+    width: 90px;
     cursor: pointer;
     border: 2px solid transparent;
     background: rgba(2, 52, 58, 0.3);
     backdrop-filter: blur(5px);
-    color: #6ec4f5;
-    border: 3px solid  #bd7ef1;
+    /*color: #6ec4f5;*/
+    color: rgb(135, 194, 250);
+    border: 3px solid rgb(135, 194, 250);
   }
   
   .btn:hover,
@@ -201,8 +157,6 @@
     
     background: rgba(2, 52, 58, 0.3);
     backdrop-filter: blur(5px);
-    color: #7EEAF1;
-    border: 3px solid #7eeaf1;
     
   }
   .btns {
@@ -210,20 +164,20 @@
     color: #000000;
     text-decoration: none;
     text-transform: uppercase;
-    background: linear-gradient(99.4deg, #0B8C95 14.06%, #7EEAF1 87.56%);
+  
     padding: 12px 12px;
     border-radius: 30px;
     text-align: center;
-    margin-right: 30px;
+    margin-right: 25px;
     font-size: 40;
     font-weight: 900;
-    width: 150px;
+    width: 140px;
     cursor: pointer;
     border: 2px solid transparent;
     background: rgba(2, 52, 58, 0.3);
     backdrop-filter: blur(5px);
-    color: #7EEAF1;
-    border: 3px solid #7eeaf1;
+    color: rgb(135, 194, 250);
+    border: 3px solid rgb(135, 194, 250);
   }
   
   .btns:hover,
@@ -231,9 +185,7 @@
     
     background: rgba(2, 52, 58, 0.3);
     backdrop-filter: blur(5px);
-    color: #7EEAF1;
-    border: 3px solid #7eeaf1;
-    
+   
   }
   .buttons{
     display: flex;
