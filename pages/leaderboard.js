@@ -1,14 +1,17 @@
 import React from "react";
 import Leadertable from "../components/Leadertable";
 import Link from 'next/link';
-// import DrawerRight from "../components/DrawerRight"
+import DrawerRight from "../components/DrawerRight"
 import Layout from "../components/Layout";
+import styles from "../styles/index.module.css";
 
 export default function leaderboard() {
   return (
     <Layout>
-      <div>
-        <Link href='/'><a>Back</a></Link>
+    <div className={styles.dashboard}> 
+  <div className={styles.glasscontainer}>
+        <div style={{paddingTop:"20px",paddingLeft:"20px"}}>
+        <Link href='/'><a className={styles.btn}>Back</a></Link>
         </div>
       <div style={{ textAlign: "center" }}>
         <div className="head">
@@ -24,6 +27,9 @@ export default function leaderboard() {
           </div>
         </div>
         <Leadertable />
+      </div>
+    
+      </div>
       </div>
     </Layout>
   );

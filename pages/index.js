@@ -25,7 +25,7 @@ function index() {
       <div className={styles.buttons}>
       <Rules />
       <Link href='/leaderboard'>
-      <a className={styles.btns}>leaderboard</a>
+      <a className={styles.btns}>Leaderboard</a>
       </Link>
     </div>
       
