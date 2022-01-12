@@ -33,8 +33,10 @@
   }
   
   .glasscontainer {
-    width: 90%;
-    height: calc(100vh - 90px);
+    /* width: 90%;
+    height: calc(100vh - 90px); */
+    width: 95%;
+height: calc(100vh - 70px);
     margin: auto auto;
     border-radius: 20px;
     background: rgba(29, 11, 63, 0.493);

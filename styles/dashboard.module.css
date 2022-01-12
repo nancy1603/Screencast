@@ -1,23 +1,5 @@
 .Container{
-    /* display:flex;
-    align-content:center;
-    justify-content: center;
-    position:relative;
-    padding: 20px 0;
-    width:95%;
-    height:90%;
-    left:50px;
-    /* right:25px; */
-    /* top: 26px; */
-    /* bottom: 12px; */
-    /* background-color: black; */
-    /* background: rgba(2, 52, 58, 0.31);
-    backdrop-filter: blur(5px); */
-/* Note: backdrop-filter has minimal browser support */
-    /* border: 4px solid #4dcfe0;
-    border-radius: 30px;  */
-
-    background-image: url('../public/scbg4.jpg');
+   background-image: url('../public/scbg4.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -33,8 +15,10 @@
 }
 .cont{
 display:flex;
-width: 90%;
+/* width: 90%; */
 margin: auto;
+/* height: calc(100vh - 90px); */
+        width: 95%;
 height: calc(100vh - 70px);
 border-radius: 20px;
 background: rgba(29, 11, 63, 0.493);
@@ -42,6 +26,7 @@ background: rgba(29, 11, 63, 0.493);
     backdrop-filter: blur(15px);
 position: relative;
 overflow: scroll;
+/* padding: 20px 0; */
 /* top:0px; */
 }
 .cont::-webkit-scrollbar {

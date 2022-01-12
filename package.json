@@ -39,5 +39,8 @@
     "sweetalert": "^2.1.2",
     "sweetalert2": "^9.17.2",
     "typeface-roboto": "0.0.75"
+  },
+  "devDependencies": {
+    "@iconify/react": "^3.1.2"
   }
 }

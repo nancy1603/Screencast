@@ -5,6 +5,8 @@ import Timeline from './Timeline';
 import { makeStyles } from "@material-ui/core/styles";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import { MdLeaderboard } from "react-icons/md";
+import { Icon } from '@iconify/react';
+
 
 const useStyles = makeStyles({
     paper: {
@@ -24,9 +26,11 @@ function DrawerLeft(props) {
     const styles = useStyles();
     return (
         <>
-        <Button onClick={toggleDrawer(true)}
-        className="flicker"
-        style={{color:"#4dcfe0", fontSize:"18px", fontWeight:"bold",padding:"0px",margin:"0px"}}> <a><img src="/levels.png" style={{ width: "20px"}}/></a></Button>
+        <Button onClick={toggleDrawer(true)}>
+        <Icon icon="flat-color-icons:timeline" color="#9747ff" height="40" hFlip={true} />
+        {/* className="flicker"
+        style={{color:"#4dcfe0", fontSize:"18px", fontWeight:"bold",padding:"0px",margin:"0px"}}> <a><img src="/levels.png" style={{ width: "20px"}}/></a> */}
+        </Button>
         <Drawer
         anchor={'left'}
         width={'100%'}

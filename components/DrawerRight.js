@@ -3,6 +3,7 @@ import { Button } from '@material-ui/core';
 import { Drawer } from '@material-ui/core';
 import LeadTable from './LeadTable';
 import { makeStyles } from "@material-ui/core/styles";
+import { Icon } from '@iconify/react';
  
 import { AiOutlineCloseCircle } from "react-icons/ai";
 // import HighlightOffSharpIcon from '@mui/icons-material/HighlightOffSharp';
@@ -24,9 +25,11 @@ function DrawerRight() {
     const styles = useStyles();
     return (
         <>
-        <Button onClick={toggleDrawer(true)}
-        //className="flicker"
-        style={{fontSize:"18px", fontWeight:"bold",padding:"0px",margin:"0px"}}> <a><img src="/leaderboard.png" style={{ width: "20px" }}/></a></Button>
+        <Button onClick={toggleDrawer(true)}>
+        <Icon icon="iconoir:leaderboard-star" color="#9747ff" height="40" hFlip={true} />
+        {/* //className="flicker"
+        // style={{fontSize:"18px", fontWeight:"bold",padding:"0px",margin:"0px"}}> <a><img src="/leaderboard.png" style={{ width: "20px" }}/></a> */}
+        </Button>
         <Drawer
         anchor={'right'}
         width={'100%'}

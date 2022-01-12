@@ -25,7 +25,7 @@ export default function Timer(props) {
                             <div className="flicker"
                                 style={{
                                     textAlign: "center",
-                                    fontSize: "25px",
+                                    fontSize: "20px",
                                     display: "flex",
                                     justifyContent: "center"
 
@@ -53,7 +53,7 @@ export default function Timer(props) {
                             className="container neon-box"
                             style={{
                                 textAlign: "center",
-                                fontSize: "25px",
+                                fontSize: "32px",
                                 fontFamily: "'Russo One', sans-serif",
                             }}
                         >
@@ -77,7 +77,7 @@ export default function Timer(props) {
                                 <div className="flicker"
                                     style={{
                                         textAlign: "center",
-                                        fontSize: "25px",
+                                        fontSize: "20px",
                                         display: "flex",
                                         justifyContent: "center"
 
