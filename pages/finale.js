@@ -13,7 +13,8 @@ function finale() {
 
   return (
     <Layout>
-      <div>
+      <div className={styles.dashboard}> 
+     <div className={styles.glasscontainer}>
         <div
           style={{
             textAlign: "center",
@@ -27,15 +28,10 @@ function finale() {
           <span className="flicker">Thank You for Playing!</span>
           <br />
           <br />
-          {/* <span className="flicker">You have completed all Questions</span>
-          <br />
-          <br /> */}
           <span className="flicker">Be back soon :)</span>
           <br />
           <br />
           <br />
-        </div>
-        <div style={{}}>
           <Button
             className="btnSubmit"
             variant="contained"
@@ -48,10 +44,7 @@ function finale() {
               </Button>
         </div>
       </div>
-      <div className="footerBuff2">
-
       </div>
-
     </Layout>
   );
 }

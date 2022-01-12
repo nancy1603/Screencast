@@ -26,9 +26,6 @@ export default function Rules() {
 
   return (
     <div>
-      {/* <div className={styles.btn} onClick={handleClickOpen}>
-        Rules
-      </div> */}
       <Button
         className="btnSubmit"
         // aria-describedby={id}

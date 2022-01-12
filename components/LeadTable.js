@@ -5,7 +5,6 @@ import Layout from "../components/Layout";
 export default function leaderboard() {
   return (
     <Layout>
-      {/* <div style={{ textAlign: "center"}}> */}
         <div className="head">
         <div
             className="container neon-box"

@@ -44,7 +44,7 @@ body::-webkit-scrollbar {
     }
 }
 
-.footerBuff {
+/*.footerBuff {
     height: 110px;
 }
 
@@ -62,7 +62,7 @@ body::-webkit-scrollbar {
     .footerBuff2 {
         height: 0px;
     }
-}
+}*/
 
 
 /* .fbbutton {
@@ -455,6 +455,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center; 
     padding:10px;
+    padding-bottom: 2px;
     width:104%;
     /* margin: 5px; */
     /* margin-bottom:100px;

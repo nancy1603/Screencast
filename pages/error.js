@@ -1,10 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout";
-
+import styles from "../styles/index.module.css";
 function error() {
   return (
     <Layout>
-      <div>
+    <div className={styles.dashboard}> 
+  <div className={styles.glasscontainer}>
+     
         <div
           style={{
             textAlign: "center",
@@ -20,6 +22,8 @@ function error() {
           <br />
           <span className="flicker"></span>
         </div>
+      
+      </div>
       </div>
     </Layout>
   );

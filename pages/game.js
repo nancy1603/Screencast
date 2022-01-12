@@ -167,16 +167,13 @@ export default function game() {
                 <Hint hint={hint}
                   submit={submit}
                 />
-                <style jsx>{`
+               {/*} <style jsx>{`
             div {
               text-align: center;
               margin: 5px;
               margin-bottom:100px;
             }
-          `}</style>
-              </div>
-              <div className='footerBuff'>
-
+          `}</style>*/}
               </div>
             </div>
           </Layout>

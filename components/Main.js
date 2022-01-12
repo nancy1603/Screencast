@@ -155,7 +155,7 @@ export default function game(props) {
         { (loaded === true) ?
           <Layout>
             <div
-              style={{ marginRight: "auto", marginLeft: "auto", textAlign: "center", minHeight: "100vh-100px" }}
+              style={{ marginRight: "auto", marginLeft: "auto", textAlign: "center", minHeight: "100vh-100px",marginBottom:"10px" }}
               questions
             >
               {quizStarted ? (<>
@@ -170,14 +170,6 @@ export default function game(props) {
                   submit={submit}
                 // submit2={this.submit2}
                 />
-                
-                <style jsx>{`
-            div {
-              text-align: center;
-              margin: 5px;
-              margin-bottom:100px;
-            }
-          `}</style>
           <div className="Ruleb">
           <Rules>Rules</Rules>
           </div>
