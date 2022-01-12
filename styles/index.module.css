@@ -36,7 +36,7 @@
     width: 90%;
     height: calc(100vh - 90px);
     margin: auto auto;
-    border-radius: 30px;
+    border-radius: 20px;
     background: rgba(29, 11, 63, 0.493);
     /* border: 2px solid #b4aeb9ce; */
     backdrop-filter: blur(15px);
@@ -229,11 +229,13 @@
     .innercontent{
       padding: 65px;
     }
-    .glasscontainer{
-      height: calc(100vh - 100px);
-     }
+   
      .dashboard{
-       padding: 30px 0;
+      padding: 20px 0;
+    }
+    .glasscontainer{
+      height: calc(100vh - 90px);
+      width: 95%;
      }
   }
   
@@ -247,8 +249,12 @@
   .innercontent{
     padding: 42px;
   }
+  .dashboard{
+    padding: 20px 0;
+  }
   .glasscontainer{
-    height: calc(100vh - 110px);
+    height: calc(100vh - 90px);
+    width: 95%;
    }
 }
 @media screen and (max-width: 530px){

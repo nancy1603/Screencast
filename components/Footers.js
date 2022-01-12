@@ -17,7 +17,7 @@ function Footers() {
           <a href="https://nitdgplug.org/">
                   <img
                     src="/glug.png"
-                    style={{ width: "28px",height: "28px",marginRight: "15px" }}
+                    style={{ width: "28px",height: "28px",marginRight: "7px",marginLeft:"7px" }}
                     
                   />
                   </a>
