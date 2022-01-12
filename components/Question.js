@@ -50,7 +50,7 @@ export default function Question(props) {
           className="container neon-box"
           style={{
             textAlign: "center",
-            fontSize: "40px",
+            fontSize: "32px",
             fontFamily: "'Russo One', sans-serif",
           }}
         >
