@@ -104,7 +104,7 @@ const useStyles = (theme) => ({
     // left:0,
     // right:0,
     // bottom:0,
-    borderRadius:"40px", 
+    borderRadius:"20px", 
     padding:"5px", 
     // webkitMask:"linear-gradient (45deg, #064244) content-box, linear-gradient(45deg,#064244)",
     // webkitMaskComposite: "destination-out", 

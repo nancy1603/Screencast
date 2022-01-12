@@ -95,6 +95,7 @@ body::-webkit-scrollbar {
     margin: 0 auto;
     padding: 10px;
     padding-top: 10px;
+    
 }
 .arrow{
     display:none;
@@ -103,9 +104,10 @@ body::-webkit-scrollbar {
     .arrow{
         display:flex;
         justify-content:space-between;
-        height:fit-content;
-        padding: 15px;
+        /* height:fit-content; */
+        /* padding: 0px;
         padding-bottom: 0px;
+        margin:2px; */
         /* width:fit-content; */
     }
     .head{
@@ -132,7 +134,7 @@ body::-webkit-scrollbar {
     min-width: 100px;
     margin: 20px auto;
     padding: 20px;
-    border-radius: 30px;
+    border-radius: 10px;
     border: 2px solid #b14de0;
 }
 /* .question::before {
@@ -502,7 +504,7 @@ body::-webkit-scrollbar {
         display:flex;
         align-items: center;
         justify-content: center;
-        padding: 15px;
+        padding: 0px;
         /* width:fit-content; */
     }
 }

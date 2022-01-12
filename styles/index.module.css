@@ -56,7 +56,7 @@
   }
   
   .logo {
-    font-size: 80px;
+    font-size: 60px;
     font-weight: bold;
     color: #5719d0;
   }
@@ -117,10 +117,10 @@
 
   }
   .innercontent h1 {
-    font-size: 45px;
+    font-size: 40px;
     text-transform: uppercase;
     line-height: 1;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-family: 'Barlow', sans-serif;
   }
   

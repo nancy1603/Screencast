@@ -61,7 +61,7 @@ export default function Question(props) {
       <div className="Nstick">
       <Typography
           className={classes.title}
-          style={{ fontFamily: "'Montserrat', sans-serif",color:"#fff",fontSize:"25px"}}
+          style={{ fontFamily: "'Montserrat', sans-serif",color:"#fff",fontSize:"20px"}}
           
           gutterBottom
         >

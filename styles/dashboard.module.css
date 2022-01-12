@@ -25,7 +25,7 @@ background: rgba(29, 11, 63, 0.493);
     /* border: 2px solid #b4aeb9ce; */
     backdrop-filter: blur(15px);
 position: relative;
-overflow: scroll;
+/* overflow: scroll; */
 /* padding: 20px 0; */
 /* top:0px; */
 }
@@ -71,6 +71,7 @@ overflow: scroll;
     /* background-color: black 0%; */
     /* margin:15px; */
     padding:10px;
+    overflow-x: hidden;
     /* overflow: auto; */
     
 

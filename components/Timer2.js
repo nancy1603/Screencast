@@ -60,6 +60,7 @@ export default function Timer(props) {
                             <span className="flicker">SCREENCAST</span>
                         </div>
                     </div>
+                    
                     <div className={styles.timer} style={{
                         backgroundColor: "rgba(0,0,0,0)", padding: "0", margin: "0 auto", fontFamily: "'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif"
                     }}>
@@ -73,20 +74,17 @@ export default function Timer(props) {
                                 </div>
                             </h1>
                             <h1>
-
                                 <div className="flicker"
                                     style={{
                                         textAlign: "center",
                                         fontSize: "20px",
                                         display: "flex",
                                         justifyContent: "center"
-
-                                    }}>
+                                        }}>
                                     Game is not live yet !
                                 </div>
-
-                            </h1>
-                        </div>
+                                </h1>
+                                </div>
 
                     </div>
                 </>
