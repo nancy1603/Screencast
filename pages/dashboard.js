@@ -8,6 +8,7 @@ import axios from "axios";
 import FinishedPlaying from '../components/FinishedPlaying';
 import DrawerLeft from "../components/DrawerLeft";
 import DrawerRight from "../components/DrawerRight";
+import Footers from "../components/Footers"
 
 var ApplicationUtil = require("../utils/logout");
 
@@ -142,11 +143,16 @@ function dashboard() {
                 quizFinished? (
                 <FinishedPlaying/>):(<></>)
               }
-              {/* <Footers/> */}
+              <div style={{marginTop:"50px"}}>
+                <Footers/>
+              </div>
+              
               </div>
                 
             <div className={styles.LeadtableContainer}><LeadTable/></div>
+           
             </div>
+            
             </div>
         
     )

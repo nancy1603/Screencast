@@ -4,14 +4,17 @@ import Link from 'next/link';
 import DrawerRight from "../components/DrawerRight"
 import Layout from "../components/Layout";
 import styles from "../styles/index.module.css";
+import { BsFillArrowLeftCircleFill } from "react-icons/bs";
+import { FiArrowLeftCircle } from "react-icons/fi";
+
 
 export default function leaderboard() {
   return (
     <Layout>
     <div className={styles.dashboard}> 
   <div className={styles.glasscontainer}>
-        <div style={{paddingTop:"20px",paddingLeft:"20px"}}>
-        <Link href='/'><a className={styles.btns} style={{border:"hidden"}}>Back</a></Link>
+        <div style={{paddingTop:"20px",paddingLeft:"30px"}}>
+        <Link href='/'><a className="flicker" style={{textDecoration:'none',fontSize:"25px",paddingBottom:"0px",width:"50px"}}><FiArrowLeftCircle /></a></Link>
         </div>
       <div style={{ textAlign: "center" }}>
         <div className="head">
@@ -19,7 +22,7 @@ export default function leaderboard() {
             className="container neon-box"
             style={{
               textAlign: "center",
-              fontSize: "25px",
+              fontSize: "30px",
               fontFamily: "'Russo One', sans-serif",
             }}
           >

@@ -4,11 +4,11 @@ import { Drawer } from '@material-ui/core';
 import Timeline from './Timeline';
 import { makeStyles } from "@material-ui/core/styles";
 import { AiOutlineCloseCircle } from "react-icons/ai";
+import { MdLeaderboard } from "react-icons/md";
+
 const useStyles = makeStyles({
     paper: {
       background:'linear-gradient(112.76deg, rgba(255, 255, 255, 0.04) 7.77%, rgba(255, 255, 255, 0.01) 87.65%) !important',
-      //background: 'red'
-      //background:'rgba(255,255,255,0.03)',
       backdropFilter: 'blur(10px)',
 
     }
@@ -26,7 +26,7 @@ function DrawerLeft(props) {
         <>
         <Button onClick={toggleDrawer(true)}
         className="flicker"
-        style={{color:"#4dcfe0", fontSize:"18px", fontWeight:"bold"}}> <a><img src="/levels.png" style={{ width: "20px"}}/></a></Button>
+        style={{color:"#4dcfe0", fontSize:"18px", fontWeight:"bold",padding:"0px",margin:"0px"}}> <a><img src="/levels.png" style={{ width: "20px"}}/></a></Button>
         <Drawer
         anchor={'left'}
         width={'100%'}

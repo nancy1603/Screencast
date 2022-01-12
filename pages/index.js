@@ -32,7 +32,7 @@ function index() {
     </div>
          <Login/>
     </div>
-        <Footers />
+     <Footers />   
   </div>
   
 </div>

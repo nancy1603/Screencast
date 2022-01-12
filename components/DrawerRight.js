@@ -26,7 +26,7 @@ function DrawerRight() {
         <>
         <Button onClick={toggleDrawer(true)}
         //className="flicker"
-        style={{fontSize:"18px", fontWeight:"bold"}}> <a><img src="/leaderboard.png" style={{ width: "20px" }}/></a></Button>
+        style={{fontSize:"18px", fontWeight:"bold",padding:"0px",margin:"0px"}}> <a><img src="/leaderboard.png" style={{ width: "20px" }}/></a></Button>
         <Drawer
         anchor={'right'}
         width={'100%'}
