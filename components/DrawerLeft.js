@@ -3,7 +3,7 @@ import { Button } from '@material-ui/core';
 import { Drawer } from '@material-ui/core';
 import Timeline from './Timeline';
 import { makeStyles } from "@material-ui/core/styles";
-
+import { AiOutlineCloseCircle } from "react-icons/ai";
 const useStyles = makeStyles({
     paper: {
       background:'linear-gradient(112.76deg, rgba(255, 255, 255, 0.04) 7.77%, rgba(255, 255, 255, 0.01) 87.65%) !important',
@@ -32,7 +32,9 @@ function DrawerLeft(props) {
         width={'100%'}
         open={state}
         classes={{ paper: styles.paper }}
-        onClose={toggleDrawer(false)}>
+        onClose={toggleDrawer(false)}
+        >
+          <div className="flicker" onClick={toggleDrawer(false)} style={{color:"white", fontSize:"30px",display:"flex",alignItems:"center",justifyContent:"center",marginTop:"30px"}}><AiOutlineCloseCircle/></div>
             <div 
             onClick={toggleDrawer(false)}
             style={{height:"1000vh", minWidth:"40vh"}}>
