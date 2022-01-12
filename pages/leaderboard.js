@@ -17,7 +17,7 @@ export default function leaderboard() {
         <Link href='/'><a className="flicker" style={{textDecoration:'none',fontSize:"25px",paddingBottom:"0px",width:"50px"}}><FiArrowLeftCircle /></a></Link>
         </div>
       <div style={{ textAlign: "center" }}>
-        <div className="head">
+        <div className="head" style={{paddingTop:"0px"}}>
           <div
             className="container neon-box"
             style={{

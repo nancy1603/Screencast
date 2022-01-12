@@ -5,7 +5,7 @@
     background-attachment: fixed;
     overflow: hidden;
     /*height: 100vh;*/
-    padding: 40px 0;
+    padding: 30px 0;
     margin: 0px;
     width: 100%;
     min-height: 100vh;
@@ -19,7 +19,7 @@ display:flex;
 margin: auto;
 /* height: calc(100vh - 90px); */
         width: 95%;
-height: calc(100vh - 70px);
+height: calc(100vh - 60px);
 border-radius: 20px;
 background: rgba(29, 11, 63, 0.493);
     /* border: 2px solid #b4aeb9ce; */
@@ -34,7 +34,7 @@ overflow: scroll;
 }
 .TimelineContainer{
     align-content:center;
-    width:566px;
+    width:480px;
     left: 25px;
     padding:10px;
     
@@ -86,8 +86,6 @@ overflow: scroll;
       margin: 30px;
       padding: 10px 50px;
       height: 50%;
-      background: rgba(2, 52, 58, 0.3);
-      backdrop-filter: blur(2px);
       border-radius: 40px;
 }
 .logC{
@@ -109,7 +107,7 @@ display:inherit;
 .cont{
 top:0;
 /* height:calc(100vh - 5px); */
-width: 90%;
+
 overflow: hidden;
 /* padding: 20px; */
 }

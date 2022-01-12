@@ -58,7 +58,7 @@ export default function Login(props) {
               </div>
           
 
-            <div style={{ margin: "0 auto", paddingBottom: '40px', textAlign: "center", width: "100%", justifyContent: "center" }}>
+            <div style={{ margin: "0 auto", paddingBottom: '10px', textAlign: "center", width: "100%", justifyContent: "center" }}>
               <GoogleLog />
             </div>
           </div>

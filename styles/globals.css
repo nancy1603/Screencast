@@ -31,6 +31,7 @@
     background-repeat: no-repeat;
     background-image: url("../public/scbg4.jpg");
     z-index: -99;
+    background-size: cover;
 }
 
 body::-webkit-scrollbar {
@@ -93,7 +94,7 @@ body::-webkit-scrollbar {
 .head {
     margin: 0 auto;
     padding: 10px;
-    padding-top: 40px;
+    padding-top: 10px;
 }
 .arrow{
     display:none;
@@ -484,8 +485,6 @@ body::-webkit-scrollbar {
       margin:30px;
       padding: 10px 50px;
       height: 50%;
-      background: rgba(2, 52, 58, 0.3);
-      backdrop-filter: blur(2px);
       border-radius: 40px;
 }
 .leadWrapper{
