@@ -32,6 +32,13 @@ position: relative;
 .cont::-webkit-scrollbar {
     display: none;
 }
+
+.cont{
+    
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+}
 .TimelineContainer{
     align-content:center;
     width:480px;
@@ -42,6 +49,12 @@ position: relative;
 }
 .TimelineContainer::-webkit-scrollbar {
     display: none;
+}
+.TimelineContainer {
+    
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
 }
 .MainContainer{
     align-content:center;
@@ -61,6 +74,10 @@ position: relative;
 .MainContainer::-webkit-scrollbar {
     display: none;
 }
+.MainContainer{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
 .LeadtableContainer{
     align-content:center;
     width:566px;
@@ -78,6 +95,10 @@ position: relative;
 }
 .LeadtableContainer::-webkit-scrollbar {
     display: none;
+}
+.LeadtableContainer{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }
 .show{
     justify-content: center;

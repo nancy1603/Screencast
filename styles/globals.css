@@ -444,6 +444,13 @@ body::-webkit-scrollbar {
 }
 .figure::-webkit-scrollbar{
     display: none;
+    
+}
+.figure{
+    
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
 }
 .containerfigure {
     display: block;
@@ -455,7 +462,12 @@ body::-webkit-scrollbar {
 }
 .containerfigure::-webkit-scrollbar {
     display: none;
-
+}
+.containerfigure{
+    
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    
 }
     .Ruleb{
     display: flex;
@@ -495,6 +507,10 @@ body::-webkit-scrollbar {
 }
 .leadWrapper::-webkit-scrollbar {
     display: none;
+}
+.leadWrapper {
+    -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
 }
 .arrow1{
     display:none;
