@@ -74,16 +74,23 @@ function GoogleLog(props) {
             render={(renderProps) => (
               <div className={classes.root}  >
 
-                <Button
+                <Button 
                   style={{ backgroundColor: "rgba(0,0,0,0)", padding: "0" }}
                   variant="contained"
                   color="secondary"
-                  className="button"
                   disableElevation={true}
                   onClick={renderProps.onClick}
-
-                >
-                  <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="4" borderStyle="inset" icon="googleplus" iconColor="rgba(0,0,0,1)" backgroundColor="rgb(135, 194, 250)" iconSize="7" roundness="50%" size="53" />
+                  className="btnSubmit"
+                  style={{ 
+                       color: "#330965", 
+                       border: "2px solid #330965", 
+                       backgroundColor: "#b14de0",
+                       height: "45px", width: "100px", 
+                       fontWeight:"bolder",
+                       borderRadius: "20px",
+                       }}
+                >LOGIN
+                  {/*<SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="4" borderStyle="inset" icon="googleplus" iconColor="rgba(0,0,0,1)" backgroundColor="rgb(135, 194, 250)" iconSize="7" roundness="50%" size="53" />*/}
                 </Button>
               </div>
             )}

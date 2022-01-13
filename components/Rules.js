@@ -12,8 +12,8 @@ import styles from "../styles/index.module.css"
 const useStyles = makeStyles({
   paper: {
     background:'linear-gradient(112.76deg, rgba(255, 255, 255, 0.06) 7.77%, rgba(255, 255, 255, 0.1) 87.65%) !important',
-    backdropFilter: 'blur(50px)',
-    opacity:'0.4',
+    backdropFilter: 'blur(4px)',
+    opacity:'10px',
   }
  });
 const Transition = React.forwardRef(function Transition(props, ref) {
