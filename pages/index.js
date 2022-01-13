@@ -19,7 +19,7 @@ function index() {
 
     <div className={styles.main}>
     <div className={styles.innercontent}>
-      <h1>Ready to play? </h1>
+      <h4>Ready to play? </h4>
       <p>We are all set to steer your quest for solving baffling enigmas concealed in questions. Dive deep into questions with your technical intellect and open source skills.</p>
        
       <div className={styles.buttons}>

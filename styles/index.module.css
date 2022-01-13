@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Cabin+Sketch&family=Montserrat:wght@500&family=Russo+One&family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Cabin+Sketch&family=Montserrat:wght@500&family=Russo+One&family=Monoton&display=swap");
 .dashboard::-webkit-scrollbar{
   display: none;
 }
@@ -72,6 +73,7 @@
     justify-content: space-around;
     /*padding-top: 2%;*/
     padding-top: 1%;
+    margin-bottom: 20px;
    
 }
   
@@ -89,7 +91,6 @@
       flex-direction: column;
       padding-right: 5%;
       padding: 10px 50px;
-      height: 90%;
       /* background: rgba(42, 60, 119, 0); */
       /* backdrop-filter: blur(1px); */
       border-radius: 40px;
@@ -98,8 +99,8 @@
      
   }
   .imgg
-  {
-      width: 100%;
+  {   
+      width: 90%;
       align-items: center;
       left: 50%;
       display: block;
@@ -116,12 +117,18 @@
       border: 2px solid black;
 
   }
-  .innercontent h1 {
+  .innercontent h4 {
     font-size: 40px;
     text-transform: uppercase;
+    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+    /*font-family: Clip;font-family: "'Montserrat', sans-serif"
+    src: url("https://acupoftee.github.io/fonts/Clip.ttf");*/
+    font-family: Bruno Ace;
+   
     line-height: 1;
-    margin-bottom: 25px;
-    font-family: 'Barlow', sans-serif;
+    margin-bottom: 20px;
+    
+    
   }
   
   .innercontent p {
@@ -201,6 +208,7 @@
       flex-direction: column-reverse;
       justify-content: space-around; 
       align-items: center;
+      margin-bottom: 2px;
       
     }
     .innercontent p{
