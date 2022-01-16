@@ -82,12 +82,18 @@ function GoogleLog(props) {
                   onClick={renderProps.onClick}
                   className="btnSubmit"
                   style={{ 
-                       color: "#330965", 
-                       border: "2px solid #330965", 
-                       backgroundColor: "#b14de0",
-                       height: "45px", width: "100px", 
+                       color: "white", 
+                       border: "2px solid #b14de0", 
+                       backgroundColor: "#330965",
+                       height: "40px", width: "120px", 
                        fontWeight:"bolder",
                        borderRadius: "20px",
+                       letterSpacing: "2px",  
+                       textAlign:"center",
+                       boxShadow:"0 0px 10px 0 #b14de0 inset,0 2px 10px 0 #b14de0,0 1px 10px 0 #b14de0 inset,0 5px 20px 0 #b14de0",
+                       alignItems:"center",alignContent:"center",
+                       fontSize:"15px",
+                      
                        }}
                 >LOGIN
                   {/*<SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="4" borderStyle="inset" icon="googleplus" iconColor="rgba(0,0,0,1)" backgroundColor="rgb(135, 194, 250)" iconSize="7" roundness="50%" size="53" />*/}
