@@ -11,8 +11,9 @@ import { makeStyles } from "@material-ui/core/styles";
 import styles from "../styles/index.module.css"
 const useStyles = makeStyles({
   paper: {
-    background:'linear-gradient(112.76deg, rgba(255, 255, 255, 0.06) 7.77%, rgba(255, 255, 255, 0.1) 87.65%) !important',
-    backdropFilter: 'blur(4px)',
+    backgroundColor:'#330965',
+    /*background:'linear-gradient(112.76deg, rgba(255, 255, 255, 0.06) 7.77%, rgba(255, 255, 255, 0.1) 87.65%) !important',*/
+    /*backdropFilter: 'blur(4px)',*/
     opacity:'10px',
   }
  });

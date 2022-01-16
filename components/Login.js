@@ -48,21 +48,21 @@ export default function Login(props) {
     return (
         <div>
             { (loading === true) ?
-        <>
+       
         
           <div className={styles.login}>
 
             
-              <div>
-              <img className={styles.imgg} src="Other 04.png"/>
-              </div>
+            
+              <img className={styles.imgg} src="vector.png"/>
+             
           
 
             <div style={{ margin: "0 auto", paddingBottom: '10px', textAlign: "center", width: "100%", justifyContent: "center" }}>
               <GoogleLog />
             </div>
           </div>
-        </>
+       
         : <Loader />}
         </div>
     
