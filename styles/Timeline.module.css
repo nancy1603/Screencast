@@ -15,7 +15,7 @@
     /* Note: backdrop-filter has minimal browser support */
     border: 3px solid #a700e9;
     
-    -webkit-border-image-source: linear-gradient(109.43deg, rgba(97, 236, 153, 0.83) 2.44%, #1FF190 29.18%, #21FFD5 67.03%, rgba(1, 247, 203, 0.72) 99.32%);
+    /*-webkit-border-image-source: linear-gradient(109.43deg, rgba(97, 236, 153, 0.83) 2.44%, #1FF190 29.18%, #21FFD5 67.03%, rgba(1, 247, 203, 0.72) 99.32%);*/
     
     /* background: linear-gradient(112.76deg, rgba(255, 255, 255, 0.01) 7.77%, rgba(255, 255, 255, 0.005) 87.65%); */
     
@@ -37,7 +37,7 @@
         /* Note: backdrop-filter has minimal browser support */
         border: 3px solid #606161;
         
-        -webkit-border-image-source: linear-gradient(109.43deg, rgba(97, 236, 153, 0.83) 2.44%, #1FF190 29.18%, #21FFD5 67.03%, rgba(1, 247, 203, 0.72) 99.32%);
+        /*-webkit-border-image-source: linear-gradient(109.43deg, rgba(97, 236, 153, 0.83) 2.44%, #1FF190 29.18%, #21FFD5 67.03%, rgba(1, 247, 203, 0.72) 99.32%);*/
         
         /* background: linear-gradient(112.76deg, rgba(255, 255, 255, 0.01) 7.77%, rgba(255, 255, 255, 0.005) 87.65%); */
         
