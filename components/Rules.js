@@ -80,8 +80,8 @@ export default function Rules() {
             <Typography
             style={{color:'white'}}>
               <ol className="p-3">
-                <li>The quiz comprises of 3 levels with 10 questions each.</li>
-                <li>Each question in the 1st, 2nd and 3rd rounds carry scores 10,15 and 20 respectively.</li>
+                <li>The quiz comprises of 15 questions from 3 difficulty standards.</li>
+                <li>Each question denotes a level.</li>
                 <li>You can go to the next question only after correctly attempting the current question.</li>
                 <li>
                 A level can be played only between its start and end timings.

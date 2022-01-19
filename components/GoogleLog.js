@@ -108,7 +108,17 @@ function GoogleLog(props) {
         ):
         (<div> 
           <Link href="/dashboard">
-          <Button style={{backgroundColor: "#dccffa", padding: "0" , width:"10px",color:"black",height: "40px", width: "100px", borderRadius: "15px", fontWeight:"bold"}}>PLAY</Button>
+          <Button style= {{color: "white", 
+                       border: "2px solid #b14de0", 
+                       backgroundColor: "#330965",
+                       height: "40px", width: "120px", 
+                       fontWeight:"bolder",
+                       borderRadius: "20px",
+                       letterSpacing: "2px",  
+                       textAlign:"center",
+                       boxShadow:"0 0px 10px 0 #b14de0 inset,0 2px 10px 0 #b14de0,0 1px 10px 0 #b14de0 inset,0 5px 20px 0 #b14de0",
+                       alignItems:"center",alignContent:"center",
+                       fontSize:"15px",}}>PLAY</Button>
           </Link>
           </div>)
       }
