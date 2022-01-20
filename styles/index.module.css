@@ -155,10 +155,10 @@
           margin-right: 30px;
           font-size: 40;
           font-weight: 900;
-          width: 140px;
+          
           cursor: pointer;
-          padding: 9px 10px;
-          width:140px;
+          padding: 9px 20px;
+          
           backdrop-filter: blur(100px);
           
           border: 2px solid #b14de0;
